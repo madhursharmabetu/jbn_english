@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Student Portal | JBN Institute of English, Bhind</title>
+<meta content="Dedicated student portal for enrolled 9th to 12th MP Board &amp; CBSE students at JBN Institute of English, Bhind mentored by Hirdesh Sir." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&amp;family=Cinzel:wght@600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1VlBk-DGe5EnCSJW6KApOjszXelQT5QK8AgAtYDfzUmf0BcAYfrzbW4gBi6zpx3ojWM0XCj9uwKyRMz_gM5ATEgaXSGnILhjRFAq1OUSoKuM-sislw0S2o4kfAiuw9e1KH1Zl_vx3DYdhMH-4vYPDtLKIOeq9T0COeQyqQZKCwQ3kg4cPnCC6cHGeoJ_FoewIhma3WPSQes8_FrfrVvooG6rjwH5RwLuxLjOwAsALrXEu8qYa0rI5LCUg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .font-cinzel { font-family: 'Cinzel', serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-amber-50/40 text-slate-800 min-h-screen antialiased selection:bg-amber-500 selection:text-white flex flex-col justify-between">
+<!-- Top Spiritual Bar -->
+<div class="bg-gradient-to-r from-amber-900/90 via-slate-900/95 to-amber-900/90 backdrop-blur-md text-amber-200 text-xs py-1.5 px-4 shadow-sm border-b border-amber-600/30">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-[11px] font-medium tracking-wide">
+<div class="flex items-center gap-2.5">
+<span class="font-cinzel text-amber-400 font-bold tracking-widest">॥ ॐ नमः शिवाय ॥</span>
+<span class="text-amber-300/40">|</span>
+<span class="text-amber-100 font-semibold uppercase tracking-wider">Board Excellence Hub • 9th to 12th MP Board &amp; CBSE</span>
+</div>
+<div class="flex items-center gap-4 text-amber-200/90 mt-1 sm:mt-0 font-medium">
+<span class="flex items-center gap-1"><i class="w-3 h-3 text-amber-400" data-lucide="map-pin"></i> Bamba Ka Kinara, Ater Road, Bhind (M.P.)</span>
+<span class="hidden md:inline text-amber-300/40">|</span>
+<span class="flex items-center gap-1"><i class="w-3 h-3 text-amber-400" data-lucide="phone"></i> Mentor Line: +91 9302100896</span>
+</div>
+</div>
+</div>
+<!-- Primary Light Theme Navbar -->
+<header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 py-3 flex items-center justify-between gap-4">
+<!-- Portal Brand ID -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center font-cinzel font-black text-white text-base shadow-sm ring-2 ring-amber-500/20">
+          JBN
+        </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="text-base font-extrabold text-slate-900 tracking-tight font-playfair">JBN INSTITUTE</span>
+<span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full border border-amber-300 uppercase tracking-wider">Student Portal</span>
+</div>
+<div class="text-[11px] text-amber-800 font-semibold tracking-wide">English Language &amp; Literature Board Academy • Hirdesh Sir</div>
+</div>
+</div>
+<!-- Active Student Badge & Actions -->
+<div class="flex items-center gap-3">
+<!-- Student Info Strip -->
+<div class="hidden sm:flex items-center gap-2.5 bg-slate-50 border border-slate-200/90 py-1.5 px-3.5 rounded-xl shadow-xs">
+<div class="w-7 h-7 rounded-lg bg-amber-500 text-white flex items-center justify-center font-bold text-xs ring-1 ring-amber-400/50">
+            AS
+          </div>
+<div class="text-left text-xs">
+<div class="font-bold text-slate-900 flex items-center gap-1.5 leading-tight">
+              Aman Sharma
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+</div>
+<div class="text-[10px] text-slate-600 font-medium">Roll: <strong>JBN-2025-018</strong> • Class 10th Intensive</div>
+</div>
+</div>
+<!-- Notification Bell -->
+<button class="relative p-2 rounded-xl text-slate-600 hover:text-amber-800 hover:bg-amber-50 border border-slate-200 transition" title="Notice Updates">
+<i class="w-4 h-4 text-slate-700" data-lucide="bell"></i>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-amber-600"></span>
+</button>
+<!-- Logout Action (Self-contained, no public site link) -->
+<a class="bg-red-50 hover:bg-red-100 text-red-700 hover:text-red-800 text-xs font-bold px-3.5 py-2 rounded-xl border border-red-200 transition flex items-center gap-1.5 shadow-xs" href="?action=logout" onclick="alert('You have logged out of JBN Student Portal safely.'); return false;" title="Secure Logout">
+<i class="w-3.5 h-3.5 text-red-600" data-lucide="log-out"></i>
+<span>Logout</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Student Dashboard Container -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 space-y-7 flex-1 w-full" id="overview">
+<!-- Hero / Welcome Banner -->
+<div class="bg-white/90 backdrop-blur-md border border-amber-200/80 rounded-2xl p-6 sm:p-7 shadow-sm relative overflow-hidden">
+<!-- Spiritual watermark seal -->
+<div class="absolute -right-8 -bottom-10 opacity-5 pointer-events-none select-none text-slate-900 font-cinzel text-9xl font-bold">
+        ॐ
+      </div>
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-5 relative z-10">
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-2">
+<span class="bg-amber-100 text-amber-900 border border-amber-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+              CBSE &amp; MP BOARD DUAL TRACK
+            </span>
+<span class="bg-emerald-100 text-emerald-800 border border-emerald-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Verified Enrolled Student
+            </span>
+<span class="text-xs text-slate-500 font-medium">Batch 2025–26</span>
+</div>
+<h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-playfair tracking-tight">
+            Namaste Aman, Welcome to Your Study Portal
+          </h1>
+<div class="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-slate-700">
+<span class="flex items-center gap-1.5 font-medium">
+<i class="w-4 h-4 text-amber-700" data-lucide="clock"></i>
+<strong>Today's Offline Batch:</strong> 04:30 PM – 05:30 PM (Room 1, Main Campus)
+            </span>
+<span class="hidden sm:inline text-slate-300">•</span>
+<span class="flex items-center gap-1.5 text-amber-900 font-semibold bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
+<i class="w-3.5 h-3.5 text-amber-700" data-lucide="book-open-check"></i>
+              Topic: Active-Passive Voice Transformation &amp; First Flight Ch 3
+            </span>
+</div>
+</div>
+<!-- Quick Top Action Buttons -->
+<div class="flex flex-wrap items-center gap-2.5 w-full sm:w-auto">
+<a class="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow-xs transition flex items-center justify-center gap-2 grow sm:grow-0" href="#notes-locker">
+<i class="w-4 h-4" data-lucide="file-down"></i> Download Today's Notes
+          </a>
+<a class="bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold text-xs px-4 py-2.5 rounded-xl shadow-xs transition flex items-center justify-center gap-2 grow sm:grow-0" href="https://wa.me/919302100896?text=Namaste%20Hirdesh%20Sir,%20I%20am%20Aman%20Sharma%20(Class%2010th).%20I%20have%20a%20doubt%20in%20today's%20English%20worksheet." target="_blank">
+<i class="w-4 h-4 text-emerald-600" data-lucide="message-square"></i> Ask Hirdesh Sir
+          </a>
+</div>
+</div>
+</div>
+<!-- Student Stats & Quick Indicators Grid -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Stat 1: Attendance Rate -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200/90 p-4 sm:p-5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+<span class="font-medium">Class Attendance</span>
+<div class="w-7 h-7 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700">
+<i class="w-4 h-4" data-lucide="calendar-check"></i>
+</div>
+</div>
+<div class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">96.0%</div>
+<div class="text-[11px] text-emerald-700 font-semibold mt-1 flex items-center gap-1">
+<i class="w-3 h-3" data-lucide="check"></i> 24 of 25 Sessions Present
+        </div>
+</div>
+<!-- Stat 2: Active Batch Timings -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200/90 p-4 sm:p-5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+<span class="font-medium">Assigned Batch</span>
+<div class="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700">
+<i class="w-4 h-4" data-lucide="graduation-cap"></i>
+</div>
+</div>
+<div class="text-base sm:text-lg font-black text-slate-900 truncate">10th Board Intensive</div>
+<div class="text-[11px] text-slate-600 font-medium mt-1">
+          Mon – Sat • 04:30 – 05:30 PM
+        </div>
+</div>
+<!-- Stat 3: Notes & Material Sync -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200/90 p-4 sm:p-5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+<span class="font-medium">Unlocked Handouts</span>
+<div class="w-7 h-7 rounded-lg bg-blue-100 flex items-center justify-center text-blue-700">
+<i class="w-4 h-4" data-lucide="file-text"></i>
+</div>
+</div>
+<div class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">20 <span class="text-xs font-normal text-slate-500">PDFs / Keys</span></div>
+<div class="text-[11px] text-amber-700 font-semibold mt-1 truncate">
+          Latest: Tenses Formula Chart v3
+        </div>
+</div>
+<!-- Stat 4: Test Standing -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200/90 p-4 sm:p-5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between text-xs text-slate-500 mb-1">
+<span class="font-medium">Sunday Mock Standing</span>
+<div class="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700">
+<i class="w-4 h-4" data-lucide="trophy"></i>
+</div>
+</div>
+<div class="text-2xl sm:text-3xl font-black text-amber-700 tracking-tight">Rank #2</div>
+<div class="text-[11px] text-slate-600 font-semibold mt-1">
+          Score: <strong class="text-slate-900">48 / 50</strong> (Section A &amp; B)
+        </div>
+</div>
+</div>
+<!-- Main 2-Column Section: Schedule/Timetable & Attendance History -->
+<div class="grid lg:grid-cols-12 gap-7">
+<!-- Left Column: Weekly Timetable & Daily Syllabus Breakdown (8 cols) -->
+<div class="lg:col-span-8 bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm rounded-xl p-5 sm:p-6 space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-150 pb-3">
+<div>
+<h2 class="text-lg font-bold text-slate-900 font-playfair flex items-center gap-2">
+<i class="w-4 h-4 text-amber-700" data-lucide="calendar"></i> Weekly Lecture Routine &amp; Topic Syllabus
+            </h2>
+<p class="text-xs text-slate-500">Dual Syllabus Structure: MP Board Blueprint &amp; CBSE Core Standards</p>
+</div>
+<span class="self-start sm:self-auto text-[11px] font-bold text-amber-800 bg-amber-100 border border-amber-300 px-3 py-1 rounded-full flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-600 animate-ping"></span> TODAY: DIRECT-INDIRECT SPEECH
+          </span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-xs text-left">
+<thead class="bg-slate-100/90 text-slate-700 uppercase text-[10px] font-bold tracking-wider">
+<tr>
+<th class="py-2.5 px-3 rounded-l-lg">Day</th>
+<th class="py-2.5 px-3">Batch Timing</th>
+<th class="py-2.5 px-3">Subject / Core Focus</th>
+<th class="py-2.5 px-3">Textbook / Prescribed Topic</th>
+<th class="py-2.5 px-3 rounded-r-lg">Mentor &amp; Room</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 text-slate-700">
+<tr class="hover:bg-slate-50/70 transition">
+<td class="py-3 px-3 font-bold text-slate-900">Monday</td>
+<td class="py-3 px-3 text-slate-600 font-medium">04:30 – 05:30 PM</td>
+<td class="py-3 px-3 text-amber-800 font-semibold">Applied Grammar Mastery</td>
+<td class="py-3 px-3">Tenses, Subject-Verb Concord Workbook</td>
+<td class="py-3 px-3 text-slate-600">Room 1 • Hirdesh Sir</td>
+</tr>
+<tr class="bg-amber-50/70 border-l-4 border-amber-600 font-medium text-slate-900">
+<td class="py-3 px-3 font-bold text-amber-900 flex items-center gap-1">
+<span>Tuesday</span>
+<span class="text-[9px] bg-amber-200 text-amber-900 px-1.5 py-0.2 rounded font-extrabold">TODAY</span>
+</td>
+<td class="py-3 px-3 font-semibold text-slate-900">04:30 – 05:30 PM</td>
+<td class="py-3 px-3 text-amber-900 font-bold">Direct &amp; Indirect Speech</td>
+<td class="py-3 px-3 text-slate-900">Reporting Verb Shifts &amp; First Flight Ch 3</td>
+<td class="py-3 px-3 text-amber-900 font-bold">Room 1 • Hirdesh Sir</td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition">
+<td class="py-3 px-3 font-bold text-slate-900">Wednesday</td>
+<td class="py-3 px-3 text-slate-600 font-medium">04:30 – 05:30 PM</td>
+<td class="py-3 px-3 text-amber-800 font-semibold">Prose Analytical Reading</td>
+<td class="py-3 px-3">Nelson Mandela: Long Walk to Freedom</td>
+<td class="py-3 px-3 text-slate-600">Room 1 • Hirdesh Sir</td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition">
+<td class="py-3 px-3 font-bold text-slate-900">Thursday</td>
+<td class="py-3 px-3 text-slate-600 font-medium">04:30 – 05:30 PM</td>
+<td class="py-3 px-3 text-amber-800 font-semibold">Supplementary Reader</td>
+<td class="py-3 px-3">A Triumph of Surgery + Character Sketches</td>
+<td class="py-3 px-3 text-slate-600">Room 1 • Hirdesh Sir</td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition">
+<td class="py-3 px-3 font-bold text-slate-900">Friday</td>
+<td class="py-3 px-3 text-slate-600 font-medium">04:30 – 05:30 PM</td>
+<td class="py-3 px-3 text-amber-800 font-semibold">Board Writing Skills</td>
+<td class="py-3 px-3">Formal Letter to Editor &amp; Complaint Letters</td>
+<td class="py-3 px-3 text-slate-600">Room 1 • Hirdesh Sir</td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition">
+<td class="py-3 px-3 font-bold text-slate-900">Saturday</td>
+<td class="py-3 px-3 text-slate-600 font-medium">04:30 – 05:30 PM</td>
+<td class="py-3 px-3 text-amber-800 font-semibold">Speed Test &amp; OMR Evaluation</td>
+<td class="py-3 px-3">Weekly 30-Question Grammar Sprint</td>
+<td class="py-3 px-3 text-slate-600">Room 1 • Hirdesh Sir</td>
+</tr>
+<tr class="bg-amber-100/30 text-slate-700">
+<td class="py-3 px-3 font-bold text-amber-900">Sunday</td>
+<td class="py-3 px-3 text-slate-600 font-medium">08:00 – 11:00 AM</td>
+<td class="py-3 px-3 text-amber-800 font-bold">Full Board Simulated Mock</td>
+<td class="py-3 px-3">80-Mark Board Paper (Compulsory for Top 10)</td>
+<td class="py-3 px-3 text-slate-700">Exam Hall A</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Class Note Alert -->
+<div class="bg-amber-50/80 border border-amber-200 rounded-lg p-3 text-xs text-amber-900 flex items-start gap-2.5">
+<i class="w-4 h-4 text-amber-700 shrink-0 mt-0.5" data-lucide="info"></i>
+<div>
+<strong>Mandatory Classroom Rule:</strong> Bring your hardcopy English Fair Register and Hirdesh Sir's <em>Master Tenses Formula Sheet</em> to every evening session. Homework checking starts at 04:25 PM sharp.
+          </div>
+</div>
+</div>
+<!-- Right Column: Attendance Register & Notices (4 cols) -->
+<div class="lg:col-span-4 space-y-6" id="attendance">
+<!-- Verified Classroom Attendance History -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm rounded-xl p-5">
+<div class="flex items-center justify-between mb-3 border-b border-slate-150 pb-2.5">
+<h3 class="font-bold text-slate-900 text-sm flex items-center gap-1.5 font-playfair">
+<i class="w-4 h-4 text-emerald-600" data-lucide="shield-check"></i> Verified Attendance
+            </h3>
+<span class="text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-slate-200 font-semibold">March 2025</span>
+</div>
+<div class="space-y-2.5 text-xs">
+<div class="flex justify-between py-1 border-b border-slate-100">
+<span class="text-slate-600">Total Classes Conducted:</span>
+<span class="font-bold text-slate-900">25 Sessions</span>
+</div>
+<div class="flex justify-between py-1 border-b border-slate-100">
+<span class="text-slate-600">Classes Attended:</span>
+<span class="font-bold text-emerald-700">24 Days Present</span>
+</div>
+<div class="flex justify-between py-1 border-b border-slate-100">
+<span class="text-slate-600">Excused Absence:</span>
+<span class="font-bold text-amber-700">1 Day (Pre-intimated)</span>
+</div>
+<div class="flex justify-between py-1 border-b border-slate-100">
+<span class="text-slate-600">Unexcused Absence:</span>
+<span class="font-bold text-emerald-700">0 Days</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-slate-600">Attendance Benchmark:</span>
+<span class="font-semibold text-slate-800">Min 85% Required</span>
+</div>
+</div>
+<!-- Monthly Mini-calendar Visual -->
+<div class="mt-4 pt-3 border-t border-slate-200">
+<div class="text-[11px] font-semibold text-slate-700 mb-2">Last 7 Sessions Log (Hirdesh Sir Register):</div>
+<div class="grid grid-cols-7 gap-1 text-center text-[10px]">
+<div class="bg-emerald-100 text-emerald-800 p-1 rounded font-bold" title="Wed 12: Present">P</div>
+<div class="bg-emerald-100 text-emerald-800 p-1 rounded font-bold" title="Thu 13: Present">P</div>
+<div class="bg-emerald-100 text-emerald-800 p-1 rounded font-bold" title="Fri 14: Present">P</div>
+<div class="bg-emerald-100 text-emerald-800 p-1 rounded font-bold" title="Sat 15: Present">P</div>
+<div class="bg-amber-100 text-amber-800 p-1 rounded font-bold" title="Sun 16: Test Present">TEST</div>
+<div class="bg-emerald-100 text-emerald-800 p-1 rounded font-bold" title="Mon 17: Present">P</div>
+<div class="bg-blue-100 text-blue-800 p-1 rounded font-bold border border-blue-300" title="Tue 18: Today">TODAY</div>
+</div>
+<p class="text-[10px] text-slate-500 mt-2 leading-relaxed italic">
+              * Biometric and physical register verified at Ater Road campus desk. SMS alerts are dispatched automatically to parents for unnotified leaves.
+            </p>
+</div>
+</div>
+<!-- Sunday Test Series Standing Card -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm rounded-xl p-5">
+<div class="flex items-center justify-between mb-3 border-b border-slate-150 pb-2.5">
+<h3 class="font-bold text-slate-900 text-sm font-playfair flex items-center gap-1.5">
+<i class="w-4 h-4 text-amber-700" data-lucide="award"></i> Sunday Mock Standing
+            </h3>
+<span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full">Test #14</span>
+</div>
+<div class="space-y-2 text-xs">
+<div class="flex justify-between items-center">
+<span class="text-slate-600">Test Topic:</span>
+<span class="font-semibold text-slate-900">Grammar &amp; First Flight Ch 1-2</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-slate-600">Your Score:</span>
+<span class="font-black text-amber-800 text-sm">48 / 50 Marks</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-slate-600">Batch Rank:</span>
+<span class="font-bold text-emerald-700">2nd out of 42 students</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-slate-600">Next Board Marathon:</span>
+<span class="font-bold text-red-700">Sunday @ 08:00 AM</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-200 flex gap-2">
+<a class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-[11px] font-bold py-2 rounded-lg text-center transition flex items-center justify-center gap-1" href="https://wa.me/919302100896?text=Student%20Portal:%20Please%20send%20Test%2014%20OMR%20Solution%20Key" target="_blank">
+<i class="w-3.5 h-3.5 text-amber-700" data-lucide="key"></i> View Answer Key
+            </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Personalized Copy Evaluation & Red-Ink Remarks (Unique Feature) -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm rounded-xl p-5 sm:p-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-150 pb-3 mb-4">
+<div>
+<h2 class="text-lg font-bold text-slate-900 font-playfair flex items-center gap-2">
+<i class="w-4 h-4 text-red-600" data-lucide="edit-3"></i> Personalized Copy Evaluation &amp; Hirdesh Sir's Red-Ink Remarks
+          </h2>
+<p class="text-xs text-slate-500">Every notebook evaluated 1-on-1 with step-marking and grammatical analysis</p>
+</div>
+<span class="text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full self-start sm:self-auto">
+          Checked on 17 March 2025
+        </span>
+</div>
+<div class="grid md:grid-cols-3 gap-4">
+<!-- Remark Card 1 -->
+<div class="bg-amber-50/50 border border-amber-200/80 p-4 rounded-xl space-y-2">
+<div class="flex items-center justify-between text-xs">
+<span class="font-bold text-slate-900">Formal Letter Writing</span>
+<span class="text-emerald-700 font-bold bg-white px-2 py-0.5 rounded border border-emerald-200">5 / 5 Marks</span>
+</div>
+<div class="text-xs text-slate-700 italic border-l-2 border-amber-600 pl-2 py-0.5">
+            "Excellent subject line format. The 3-paragraph structure matches CBSE/MP board criteria perfectly. Keep this exact template for the board exam."
+          </div>
+<div class="text-[10px] text-amber-900 font-semibold flex items-center gap-1">
+<i class="w-3 h-3 text-emerald-600" data-lucide="check-circle"></i> Verified by Hirdesh Sir
+          </div>
+</div>
+<!-- Remark Card 2 -->
+<div class="bg-amber-50/50 border border-amber-200/80 p-4 rounded-xl space-y-2">
+<div class="flex items-center justify-between text-xs">
+<span class="font-bold text-slate-900">Direct-Indirect Interrogative</span>
+<span class="text-amber-800 font-bold bg-white px-2 py-0.5 rounded border border-amber-300">4 / 5 Marks</span>
+</div>
+<div class="text-xs text-slate-700 italic border-l-2 border-red-500 pl-2 py-0.5">
+            "Watch out for <em>'said to'</em> becoming <em>'asked'</em>. You omitted 'whether' in question 4. Remember rule: no 'that' when using 'if/whether'."
+          </div>
+<div class="text-[10px] text-red-800 font-semibold flex items-center gap-1">
+<i class="w-3 h-3 text-red-600" data-lucide="alert-circle"></i> Red-Ink Attention Required
+          </div>
+</div>
+<!-- Remark Card 3 -->
+<div class="bg-amber-50/50 border border-amber-200/80 p-4 rounded-xl space-y-2">
+<div class="flex items-center justify-between text-xs">
+<span class="font-bold text-slate-900">Nelson Mandela Character Sketch</span>
+<span class="text-emerald-700 font-bold bg-white px-2 py-0.5 rounded border border-emerald-200">4.5 / 5 Marks</span>
+</div>
+<div class="text-xs text-slate-700 italic border-l-2 border-amber-600 pl-2 py-0.5">
+            "Keywords like 'apartheid', 'extraordinary human disaster', and 'depths of oppression' were placed accurately. Very mature vocabulary!"
+          </div>
+<div class="text-[10px] text-amber-900 font-semibold flex items-center gap-1">
+<i class="w-3 h-3 text-amber-600" data-lucide="star"></i> High Distinction Remark
+          </div>
+</div>
+</div>
+</div>
+<!-- Study Materials & Handwritten Notes Locker -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm rounded-xl p-5 sm:p-6" id="notes-locker">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-150 pb-4 mb-5">
+<div>
+<h2 class="text-lg font-bold text-slate-900 font-playfair flex items-center gap-2">
+<i class="w-4 h-4 text-amber-700" data-lucide="folder-kanban"></i> Study Materials &amp; Handwritten Notes Locker
+          </h2>
+<p class="text-xs text-slate-500">Curated exclusively for enrolled batch students • Class 10th Board Repository</p>
+</div>
+<div class="flex items-center gap-2 text-xs">
+<span class="bg-amber-100 text-amber-900 px-3 py-1 rounded-full font-bold border border-amber-300">
+            20 of 20 Documents Unlocked
+          </span>
+</div>
+</div>
+<!-- Category Filter Tabs (Visual) -->
+<div class="flex flex-wrap gap-2 mb-5 text-xs font-semibold">
+<button class="bg-amber-600 text-white px-3.5 py-1.5 rounded-lg shadow-xs">All Notes (20)</button>
+<button class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-1.5 rounded-lg transition">Grammar Formulas (7)</button>
+<button class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-1.5 rounded-lg transition">NCERT Literature Hindi Decode (6)</button>
+<button class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-1.5 rounded-lg transition">Board Writing Rubrics (4)</button>
+<button class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-1.5 rounded-lg transition">Model Paper Sets (3)</button>
+</div>
+<!-- Material Cards Grid -->
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Card 1 -->
+<div class="bg-slate-50 border border-slate-200 hover:border-amber-400 p-4 rounded-xl flex flex-col justify-between transition group shadow-xs">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded border border-blue-200">GRAMMAR • PDF</span>
+<span class="text-[11px] text-slate-500 font-medium">3.4 MB</span>
+</div>
+<h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-800 transition">
+              Active &amp; Passive Voice Special Cases
+            </h4>
+<p class="text-xs text-slate-600 mt-1 mb-3">
+              Imperatives, verbs with two objects, modal auxiliary rules &amp; 40 solved board questions.
+            </p>
+</div>
+<a class="w-full bg-white hover:bg-amber-600 text-slate-800 hover:text-white border border-slate-200 hover:border-amber-600 text-xs font-bold py-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition shadow-xs" href="https://wa.me/919302100896?text=Student%20Portal%20Download:%20Passive%20Voice%20Special%20Cases%20PDF" target="_blank">
+<i class="w-3.5 h-3.5 text-amber-700 group-hover:text-white" data-lucide="download"></i> Download PDF
+          </a>
+</div>
+<!-- Card 2 -->
+<div class="bg-slate-50 border border-slate-200 hover:border-amber-400 p-4 rounded-xl flex flex-col justify-between transition group shadow-xs">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded border border-amber-300">HANDWRITTEN • SCAN</span>
+<span class="text-[11px] text-slate-500 font-medium">2.8 MB</span>
+</div>
+<h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-800 transition">
+              A Letter to God — Character Sketches
+            </h4>
+<p class="text-xs text-slate-600 mt-1 mb-3">
+              Lencho &amp; Postmaster 3-mark &amp; 5-mark high-value question answers personally handwritten by Hirdesh Sir.
+            </p>
+</div>
+<a class="w-full bg-white hover:bg-amber-600 text-slate-800 hover:text-white border border-slate-200 hover:border-amber-600 text-xs font-bold py-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition shadow-xs" href="https://wa.me/919302100896?text=Student%20Portal%20Download:%20Letter%20To%20God%20Handwritten%20PDF" target="_blank">
+<i class="w-3.5 h-3.5 text-amber-700 group-hover:text-white" data-lucide="download"></i> Download Scan PDF
+          </a>
+</div>
+<!-- Card 3 -->
+<div class="bg-slate-50 border border-slate-200 hover:border-amber-400 p-4 rounded-xl flex flex-col justify-between transition group shadow-xs">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded border border-emerald-200">WRITING RUBRIC • PDF</span>
+<span class="text-[11px] text-slate-500 font-medium">1.9 MB</span>
+</div>
+<h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-800 transition">
+              Formal Letter to Editor (Full Score 5/5 Format)
+            </h4>
+<p class="text-xs text-slate-600 mt-1 mb-3">
+              10-point standardized rubric ensuring full step-marking in MP Board &amp; CBSE Section B.
+            </p>
+</div>
+<a class="w-full bg-white hover:bg-amber-600 text-slate-800 hover:text-white border border-slate-200 hover:border-amber-600 text-xs font-bold py-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition shadow-xs" href="https://wa.me/919302100896?text=Student%20Portal%20Download:%20Formal%20Letter%20Rubric%20PDF" target="_blank">
+<i class="w-3.5 h-3.5 text-amber-700 group-hover:text-white" data-lucide="download"></i> Download Rubric PDF
+          </a>
+</div>
+<!-- Card 4 -->
+<div class="bg-slate-50 border border-slate-200 hover:border-amber-400 p-4 rounded-xl flex flex-col justify-between transition group shadow-xs">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded border border-purple-200">QUESTION BANK</span>
+<span class="text-[11px] text-slate-500 font-medium">4.1 MB</span>
+</div>
+<h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-800 transition">
+              Extract-Based Questions: First Flight Poems
+            </h4>
+<p class="text-xs text-slate-600 mt-1 mb-3">
+              Dust of Snow, Fire and Ice &amp; A Tiger in the Zoo with poetic devices annotated in Hindi.
+            </p>
+</div>
+<a class="w-full bg-white hover:bg-amber-600 text-slate-800 hover:text-white border border-slate-200 hover:border-amber-600 text-xs font-bold py-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition shadow-xs" href="https://wa.me/919302100896?text=Student%20Portal%20Download:%20Poem%20Extracts%20PDF" target="_blank">
+<i class="w-3.5 h-3.5 text-amber-700 group-hover:text-white" data-lucide="download"></i> Download PDF
+          </a>
+</div>
+<!-- Card 5 -->
+<div class="bg-slate-50 border border-slate-200 hover:border-amber-400 p-4 rounded-xl flex flex-col justify-between transition group shadow-xs">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded border border-amber-300">FORMULA CHART</span>
+<span class="text-[11px] text-slate-500 font-medium">1.2 MB</span>
+</div>
+<h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-800 transition">
+              12 Tenses Algebraic Conversion Master Table
+            </h4>
+<p class="text-xs text-slate-600 mt-1 mb-3">
+              One-page laminated reference sheet with affirmative, negative, interrogative formula structures.
+            </p>
+</div>
+<a class="w-full bg-white hover:bg-amber-600 text-slate-800 hover:text-white border border-slate-200 hover:border-amber-600 text-xs font-bold py-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition shadow-xs" href="https://wa.me/919302100896?text=Student%20Portal%20Download:%20Tenses%20Formula%20Chart" target="_blank">
+<i class="w-3.5 h-3.5 text-amber-700 group-hover:text-white" data-lucide="download"></i> Download Chart
+          </a>
+</div>
+<!-- Card 6 -->
+<div class="bg-slate-50 border border-slate-200 hover:border-amber-400 p-4 rounded-xl flex flex-col justify-between transition group shadow-xs">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded border border-rose-200">MODEL PAPER</span>
+<span class="text-[11px] text-slate-500 font-medium">3.9 MB</span>
+</div>
+<h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-800 transition">
+              JBN 2025 Board Model Mock Paper (Set A)
+            </h4>
+<p class="text-xs text-slate-600 mt-1 mb-3">
+              Simulated 80-mark standard paper created by Hirdesh Sir as per current blueprint with answer sheet.
+            </p>
+</div>
+<a class="w-full bg-white hover:bg-amber-600 text-slate-800 hover:text-white border border-slate-200 hover:border-amber-600 text-xs font-bold py-2 rounded-lg text-center flex items-center justify-center gap-1.5 transition shadow-xs" href="https://wa.me/919302100896?text=Student%20Portal%20Download:%20Model%20Paper%20Set%20A" target="_blank">
+<i class="w-3.5 h-3.5 text-amber-700 group-hover:text-white" data-lucide="download"></i> Download Paper
+          </a>
+</div>
+</div>
+</div>
+<!-- Institutional Helpdesk & Mentor Direct Contact -->
+<div class="bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm rounded-xl p-5 sm:p-6 flex flex-col md:flex-row items-center justify-between gap-5">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 border border-amber-300">
+<i class="w-6 h-6" data-lucide="help-circle"></i>
+</div>
+<div>
+<h3 class="text-base font-bold text-slate-900 font-playfair">
+            Stuck on an English Problem, Grammar Rule, or Homework?
+          </h3>
+<p class="text-xs text-slate-600 mt-0.5">
+            Snap a clear picture of your notebook or book passage and send directly to Hirdesh Sir's WhatsApp mentor desk.
+          </p>
+<div class="text-[11px] text-slate-500 mt-1">
+<strong>Campus Desk:</strong> Ater Road, Bamba Ka Kinara, Bhind (M.P.) • Direct Line: <strong>+91 9302100896</strong>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0 w-full sm:w-auto">
+<a class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-5 py-3 rounded-xl transition flex items-center justify-center gap-2 shadow-xs" href="https://wa.me/919302100896?text=Namaste%20Hirdesh%20Sir,%20here%20is%20my%20homework%20doubt%20from%20Student%20Portal:" target="_blank">
+<i class="w-4 h-4" data-lucide="camera"></i> Send Notebook Photo to Sir
+        </a>
+</div>
+</div>
+</main>
+<!-- Clean Light Institutional Footer -->
+<footer class="bg-white/80 backdrop-blur-md border-t border-slate-200/90 py-5 text-center text-xs text-slate-600 mt-8">
+<div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-bold text-slate-900 font-playfair">JBN INSTITUTE OF ENGLISH</span>
+<span class="text-slate-400">•</span>
+<span>Ater Road, Bamba Ka Kinara, Bhind (M.P.)</span>
+</div>
+<div class="text-slate-500 text-[11px]">
+        Mentored by Hirdesh Sir • Registered Student Portal Access • All Rights Reserved © 2025
+      </div>
+</div>
+</footer>
+<script>
+    lucide.createIcons();
+  </script>
+</body></html>

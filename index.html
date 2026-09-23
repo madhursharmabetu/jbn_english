@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JBN Institute of English | 9th–12th MP Board &amp; CBSE | Hirdesh Sir Bhind</title>
+<meta content="Score 95%+ in English Board Exams with zero-rote pedagogy. Mentored by Hirdesh Sir (14+ yrs experience) at Ater Road, Bamba Ka Kinara, Bhind." name="description"/>
+<meta content="JBN Institute of English - Hirdesh Sir, Bhind" property="og:title"/>
+<meta content="Dedicated English Batches for 9th, 10th, 11th &amp; 12th MP Board &amp; CBSE. Book 2-Day Free Demo." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://jbnclasses.vercel.app" property="og:url"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#d97706',
+              amber: '#b45309',
+              slate: '#1e293b',
+              light: '#f8fafc',
+              border: '#e2e8f0',
+              cream: '#fffbeb'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-cinzel { font-family: 'Cinzel', serif; }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen antialiased selection:bg-amber-100 selection:text-amber-900">
+<!-- Top Spiritual Bar (Clean Light Gold/Amber Accent) -->
+<div class="bg-amber-50/90 border-b border-amber-200/80 text-xs py-2 px-4 shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 font-medium tracking-wide text-amber-900">
+<div class="flex items-center gap-2">
+<span class="font-cinzel tracking-widest text-amber-700 font-bold">॥ ॐ नमः शिवाय ॥</span>
+<span class="text-amber-300">|</span>
+<span class="text-amber-800 font-semibold">Har Har Mahadev</span>
+<span class="hidden md:inline-block text-amber-400">•</span>
+<span class="hidden md:inline-block text-slate-700 font-normal">New Offline Batches 2025–26 Now Open at Bhind Campus</span>
+</div>
+<div class="flex items-center gap-4 text-slate-700">
+<a class="hover:text-amber-700 flex items-center gap-1.5 transition font-medium" href="tel:+919302100896">
+<i class="w-3.5 h-3.5 text-amber-600" data-lucide="phone-call"></i> +91 9302100896
+      </a>
+<span class="text-slate-300">|</span>
+<span class="flex items-center gap-1 text-slate-600">
+<i class="w-3.5 h-3.5 text-amber-600" data-lucide="map-pin"></i> Ater Road, Bhind (M.P.)
+      </span>
+</div>
+</div>
+</div>
+<!-- Main Navbar (Crisp White + Subtle Shadow) -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/95 border-b border-slate-200/90 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<a class="flex items-center gap-3" href="#">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center font-cinzel font-black text-white text-xl shadow-md shadow-amber-500/20">
+        JBN
+      </div>
+<div>
+<span class="text-xl font-black tracking-tight text-slate-900 block leading-tight">JBN INSTITUTE</span>
+<span class="text-[11px] tracking-wider text-amber-700 font-bold uppercase">Of English • Hirdesh Sir</span>
+</div>
+</a>
+<!-- Desktop Links with direct portal routing -->
+<nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+<a class="hover:text-amber-700 transition" href="#batches">Classes 9th–12th</a>
+<a class="hover:text-amber-700 transition" href="#demo-booking">Free Demo</a>
+<a class="hover:text-amber-700 transition" href="#batches">Study Notes</a>
+<a class="hover:text-amber-700 transition flex items-center gap-1.5" href="#fee-counter">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Fee Counter
+      </a>
+<button class="hover:text-sky-700 transition text-sky-600 font-bold flex items-center gap-1 cursor-pointer" onclick="openLoginModal('student')">
+<i class="w-4 h-4" data-lucide="user-check"></i> Student Portal
+      </button>
+<button class="hover:text-amber-800 transition text-amber-700 font-bold flex items-center gap-1 cursor-pointer" onclick="openLoginModal('admin')">
+<i class="w-4 h-4" data-lucide="shield"></i> Admin CMS
+      </button>
+</nav>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3">
+<button class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-800 hover:text-amber-700 text-xs font-bold px-3.5 py-2.5 rounded-lg transition shadow-sm" onclick="openLoginModal('student')">
+<i class="w-4 h-4 text-amber-600" data-lucide="log-in"></i>
+<span>Portal Login</span>
+</button>
+<a class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-lg shadow-sm hover:shadow transition" href="https://wa.me/919302100896?text=Namaste%20Hirdesh%20Sir,%20I%20want%20to%20inquire%20about%20English%20batch%20admissions." target="_blank">
+<i class="w-4 h-4" data-lucide="message-circle"></i> WhatsApp Sir
+      </a>
+<a class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs font-extrabold uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-md shadow-amber-500/20 hover:shadow-lg transition" href="#demo-booking">
+        Book Free 2-Day Demo
+      </a>
+</div>
+</div>
+</header>
+<!-- Hero Section with Light Spiritual Backdrop https://lh3.googleusercontent.com/aida-public/AB6AXuD-9-UkbUpkPNE_c3IxE3IXQaGxGMLm907JP4YaKFi_Qap1HuytS80xSDH6RSNN3CbzhLq5w1D9VrJdGZL6k-nKmks9DSrJYo0m3U0ethSJfikWQqOS-977C3V7diAUj-tUUhoO-EwD7MZAAHonBnpb1l1qZi2mt-KCDHysWTCIBreffLzB8W_ad7ULT3qnmQSlw3XK_b_yvdkTtQWZO3oI3Rbrw5cjFq6196zlVR5ejQbLnzP4paQH -->
+<section class="relative pt-12 pb-20 overflow-hidden border-b border-slate-200">
+<!-- Subtle spiritual artwork background with high-readability light overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Spiritual Himalayan Background" class="w-full h-full object-cover object-center opacity-30 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-9-UkbUpkPNE_c3IxE3IXQaGxGMLm907JP4YaKFi_Qap1HuytS80xSDH6RSNN3CbzhLq5w1D9VrJdGZL6k-nKmks9DSrJYo0m3U0ethSJfikWQqOS-977C3V7diAUj-tUUhoO-EwD7MZAAHonBnpb1l1qZi2mt-KCDHysWTCIBreffLzB8W_ad7ULT3qnmQSlw3XK_b_yvdkTtQWZO3oI3Rbrw5cjFq6196zlVR5ejQbLnzP4paQH"/>
+<div class="absolute inset-0 bg-gradient-to-b from-white/80 via-white/95 to-slate-50"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<!-- Left Copy -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 px-3.5 py-1.5 rounded-full text-xs text-amber-800 font-bold shadow-sm">
+<span class="font-cinzel">॥ ॐ नमः शिवाय ॥</span>
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+<span>Classes 9th, 10th, 11th &amp; 12th MP Board &amp; CBSE English</span>
+</div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+          Score <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-700">95%+ in English</span> Board Exams with <span class="underline decoration-amber-400 decoration-4 underline-offset-4">Zero-Rote</span> Pedagogy
+        </h1>
+<p class="text-slate-700 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+          Mentored by <strong class="text-slate-900 font-bold">Hirdesh Sir</strong> (14+ years classroom excellence in Bhind). We dismantle rote memorization with algebraic formula grammar, line-by-line Hindi decoding of NCERT literature, and step-by-step scoring templates.
+        </p>
+<!-- Stats Chips -->
+<div class="grid grid-cols-3 gap-4 pt-2 max-w-xl">
+<div class="bg-white/90 backdrop-blur-sm border border-slate-200/90 p-4 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-2xl font-black text-amber-600">14+ Yrs</div>
+<div class="text-xs text-slate-600 font-medium mt-1">Classroom Pedagogy</div>
+</div>
+<div class="bg-white/90 backdrop-blur-sm border border-slate-200/90 p-4 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-2xl font-black text-amber-600">95+ Scores</div>
+<div class="text-xs text-slate-600 font-medium mt-1">MP &amp; CBSE Toppers</div>
+</div>
+<div class="bg-white/90 backdrop-blur-sm border border-slate-200/90 p-4 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-2xl font-black text-amber-600">100% Zero-Rote</div>
+<div class="text-xs text-slate-600 font-medium mt-1">Formula Grammar</div>
+</div>
+</div>
+<!-- Action CTA Row -->
+<div class="flex flex-wrap items-center gap-4 pt-3">
+<a class="bg-amber-600 hover:bg-amber-700 text-white font-extrabold px-6 py-3.5 rounded-xl shadow-md shadow-amber-600/20 text-sm flex items-center gap-2 transition" href="#demo-booking">
+<i class="w-4 h-4" data-lucide="calendar-check"></i> Book 2-Day Free Trial
+          </a>
+<a class="bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold px-6 py-3.5 rounded-xl text-sm flex items-center gap-2 transition shadow-sm" href="https://wa.me/919302100896?text=Namaste%20Hirdesh%20Sir" target="_blank">
+<i class="w-4 h-4 text-emerald-600" data-lucide="message-circle"></i> WhatsApp Sir Directly
+          </a>
+<button class="bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 font-bold px-5 py-3.5 rounded-xl text-sm flex items-center gap-2 transition shadow-sm" onclick="openLoginModal('student')">
+<i class="w-4 h-4 text-amber-700" data-lucide="key-round"></i> Portal Access (Student / Admin OTP)
+          </button>
+</div>
+<p class="text-xs text-slate-600 flex items-center gap-2 font-medium">
+<i class="w-4 h-4 text-amber-600 shrink-0" data-lucide="shield-check"></i> No fake competitive exam clutter. Pure, dedicated 9th to 12th Board specialization.
+        </p>
+</div>
+<!-- Right Educator Card with Authentic Photo Reference https://lh3.googleusercontent.com/aida-public/AB6AXuAQNppRWxiwaCB5PlwHyhm_flMDBOiuQstGPsCRs7dviAz2-99O5sYWl9CuvHJuMidB-QqcGUdw-SGIh4vM3UlIkbq9IvNjbiZt5i-_1w5GaTPJYGIsjEeNeJEa3Ipk2OiB25klAdfvhx5SRX1cneziyL8HdxQauk0yCQQh_ZLQt_bY54ZJYg4XmjkCZObW88ug_z9QlWDHHYKqFg3jkkMlKYqdm4BzXbJEJc0JBMqlz9Sjzin7JiWFeTvZxkGAWicncQ -->
+<div class="lg:col-span-5">
+<div class="relative bg-white border border-slate-200/90 rounded-3xl p-6 shadow-xl shadow-slate-200/60 overflow-hidden">
+<div class="absolute top-0 right-0 w-36 h-36 bg-amber-100/50 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex justify-between items-center mb-4">
+<span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-300/80">
+              Founder &amp; Chief Faculty
+            </span>
+<span class="text-xs text-slate-600 font-medium flex items-center gap-1">
+<i class="w-3.5 h-3.5 text-amber-600" data-lucide="map-pin"></i> Bhind Campus
+            </span>
+</div>
+<div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-slate-100 border border-slate-200 mb-5 flex items-center justify-center shadow-inner">
+<img alt="Hirdesh Sir - JBN Institute of English, Bhind" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZGyLzVwokuVJj8gGalZkSQb8uLxgNSmhucVhGFCWaJ5TLXSCKOVzZ7BmfWk4nNsx16kkpMvbUlMeHMXLAY2ByWqsmMG9jrU9jkSa1cbF3dcSM9SUcUrFkdVBBd6_iK_3moOHkAwEXWEUFdjh_1XuLqYoqrQfTsvDCNlyygvh1Qo7fZv971W4_k0DCodEvdZBGrQUqeTHZ7wMsti9w9loAUfkBseKLtckjXBCSb2lPH7m1yBjH7M6-Xv_HEVvHDVAnpw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-left">
+<div class="text-xl font-bold text-white flex items-center gap-1.5 drop-shadow">
+                Hirdesh Sir
+                <i class="w-5 h-5 text-amber-400 fill-amber-400" data-lucide="badge-check"></i>
+</div>
+<div class="text-xs text-amber-200 font-medium drop-shadow">Chief Pedagogue • 14+ Years Classroom Guide</div>
+</div>
+</div>
+<div class="bg-amber-50/70 border border-amber-200/80 rounded-xl p-3.5 text-xs text-slate-700 italic mb-4">
+            "English is not an intelligence test; it is merely a logical skill. With formula structure, every Bhind student can conquer board exams."
+          </div>
+<div class="space-y-2 text-xs text-slate-600 border-t border-slate-200 pt-3">
+<div class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-amber-600 shrink-0" data-lucide="map-pin"></i>
+<span>Ater Road, Bamba Ka Kinara, Bhind, M.P. - 477001</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-amber-600 shrink-0" data-lucide="phone"></i>
+<span>Direct Helpline: <strong class="text-slate-900 font-bold">+91 9302100896</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dedicated Classroom Batches -->
+<section class="py-20 bg-slate-100/60 border-b border-slate-200" id="batches">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-xs font-bold uppercase tracking-widest text-amber-800 bg-amber-100 px-3.5 py-1 rounded-full border border-amber-300">
+        Classroom Batches (Session 2025–26)
+      </span>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3 mb-4">
+        Dedicated Board Curriculum Architecture
+      </h2>
+<p class="text-slate-600 text-sm font-normal">
+        Strictly aligned with MP Board Blueprint &amp; CBSE Board Syllabus. Batch sizes restricted to 45 students for personalized copy evaluation.
+      </p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Class 9th -->
+<div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 hover:shadow-md transition">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="bg-blue-50 text-blue-700 text-xs font-bold px-2.5 py-1 rounded-md border border-blue-200">Class 9th</span>
+<span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="clock"></i> 03:30 - 04:30 PM
+            </span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Foundation English Core</h3>
+<p class="text-xs text-slate-600 mb-4 leading-relaxed">Grammar fundamentals, Beehive &amp; Moments line-by-line decode, spoken podium drills.</p>
+<ul class="space-y-2 text-xs text-slate-700 mb-6 font-medium">
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Complete NCERT Literature</li>
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Basic to Advanced Tense &amp; Voice</li>
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Weekly Sunday OMR Test</li>
+</ul>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-xs text-slate-500 block">Monthly Tuition</span>
+<span class="text-xl font-black text-slate-900">₹800<span class="text-xs text-slate-500 font-normal">/mo</span></span>
+</div>
+<a class="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm" href="#demo-booking">Enroll 9th</a>
+</div>
+</div>
+<!-- Class 10th (High Demand) -->
+<div class="bg-white border-2 border-amber-500 rounded-2xl p-6 flex flex-col justify-between relative shadow-lg shadow-amber-500/10">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white font-extrabold text-[10px] uppercase px-3 py-0.5 rounded-full tracking-wider shadow">
+          High Demand Board Batch
+        </div>
+<div>
+<div class="flex justify-between items-center mb-4 mt-1">
+<span class="bg-amber-50 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md border border-amber-300">Class 10th</span>
+<span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="clock"></i> 04:30 - 05:30 PM
+            </span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Board High-Scorer Intensive</h3>
+<p class="text-xs text-slate-600 mb-4 leading-relaxed">First Flight &amp; Footprints Without Feet, analytical paragraph mastery, 10-year PYQ solving.</p>
+<ul class="space-y-2 text-xs text-slate-700 mb-6 font-medium">
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Board Blueprint Question Banks</li>
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Handwritten Formula Booklets</li>
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Sir's Red-Ink Copy Evaluation</li>
+</ul>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-xs text-slate-500 block">Monthly Tuition</span>
+<span class="text-xl font-black text-amber-700">₹950<span class="text-xs text-slate-500 font-normal">/mo</span></span>
+</div>
+<a class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-extrabold px-4 py-2 rounded-lg transition shadow-md shadow-amber-600/20" href="#demo-booking">Enroll 10th</a>
+</div>
+</div>
+<!-- Class 11th -->
+<div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 hover:shadow-md transition">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-1 rounded-md border border-indigo-200">Class 11th</span>
+<span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="clock"></i> 05:30 - 06:30 PM
+            </span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Core Literature &amp; Applied Grammar</h3>
+<p class="text-xs text-slate-600 mb-4 leading-relaxed">Hornbill &amp; Snapshots deep analysis, formal letter &amp; notice writing structure, clause synthesis.</p>
+<ul class="space-y-2 text-xs text-slate-700 mb-6 font-medium">
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Literary Devices &amp; Themes</li>
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Advanced Sentence Transformation</li>
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> Note-Making &amp; Summary Precision</li>
+</ul>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-xs text-slate-500 block">Monthly Tuition</span>
+<span class="text-xl font-black text-slate-900">₹950<span class="text-xs text-slate-500 font-normal">/mo</span></span>
+</div>
+<a class="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm" href="#demo-booking">Enroll 11th</a>
+</div>
+</div>
+<!-- Class 12th Super 50 -->
+<div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 hover:shadow-md transition">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="bg-emerald-50 text-emerald-700 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-200">Class 12th</span>
+<span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="clock"></i> 06:30 - 07:30 PM
+            </span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Class 12th Super 50 Excellence</h3>
+<p class="text-xs text-slate-600 mb-4 leading-relaxed">Flamingo &amp; Vistas comprehensive mastery, editorial articles, job applications, 100/100 strategy.</p>
+<ul class="space-y-2 text-xs text-slate-700 mb-6 font-medium">
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> 100/100 Board Marksheet Strategy</li>
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> 20 Sunday Full Syllabus Mocks</li>
+<li class="flex items-center gap-2"><i class="w-3.5 h-3.5 text-emerald-600 shrink-0" data-lucide="check"></i> 1-on-1 Copy Checking by Hirdesh Sir</li>
+</ul>
+</div>
+<div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-xs text-slate-500 block">Monthly Tuition</span>
+<span class="text-xl font-black text-slate-900">₹1,100<span class="text-xs text-slate-500 font-normal">/mo</span></span>
+</div>
+<a class="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-sm" href="#demo-booking">Enroll 12th</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Demo Booking Form -->
+<section class="py-20 bg-slate-50 border-b border-slate-200" id="demo-booking">
+<div class="max-w-3xl mx-auto px-4 sm:px-6">
+<div class="bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-xl relative">
+<div class="text-center mb-8">
+<span class="text-xs font-bold uppercase tracking-widest text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
+          Zero-Risk Trial
+        </span>
+<h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-3">Attend 2 Days Free Demo Classes</h2>
+<p class="text-xs text-slate-600 mt-2 font-normal">Experience Hirdesh Sir's classroom lecture at Ater Road, Bhind before paying a single rupee.</p>
+</div>
+<form class="space-y-4" id="demoForm" onsubmit="handleDemoSubmit(event)">
+<div class="grid sm:grid-cols-2 gap-4">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Student Full Name *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition" id="studentName" placeholder="e.g. Aman Sharma" required="" type="text"/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Parent / Student WhatsApp No. *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition" id="studentPhone" placeholder="10-digit mobile number" required="" type="tel"/>
+</div>
+</div>
+<div class="grid sm:grid-cols-2 gap-4">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Enrolling For Class *</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition" id="studentClass">
+<option value="Class 10th (MP Board Intensive)">Class 10th (MP Board Intensive)</option>
+<option value="Class 12th (Super 50 Board Excellence)">Class 12th (Super 50 Board Excellence)</option>
+<option value="Class 9th (Foundation English)">Class 9th (Foundation English)</option>
+<option value="Class 11th (Core Literature)">Class 11th (Core Literature)</option>
+</select>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Board &amp; Medium</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition" id="studentBoard">
+<option value="MP Board (Hindi Medium)">MP Board (Hindi Medium)</option>
+<option value="MP Board (English Medium)">MP Board (English Medium)</option>
+<option value="CBSE Board">CBSE Board</option>
+</select>
+</div>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Specific Problem Area (Optional)</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition" id="studentNotes" placeholder="e.g. Weak in passive voice, fear of speaking, long answers" type="text"/>
+</div>
+<button class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-extrabold py-3.5 rounded-xl shadow-md shadow-amber-500/20 hover:shadow-lg transition text-sm flex items-center justify-center gap-2 mt-4 cursor-pointer" type="submit">
+<i class="w-4 h-4" data-lucide="send"></i> Confirm 2-Day Free Demo Pass via WhatsApp
+        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Official UPI Payment Counter -->
+<section class="py-12 bg-white border-b border-slate-200" id="fee-counter">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+<div class="bg-gradient-to-r from-amber-50 via-slate-50 to-amber-50/70 border border-amber-200/70 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+<div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md border border-emerald-300">Official UPI Payment Counter</span>
+<h3 class="text-xl font-bold text-slate-900 mt-2">Pay Monthly Tuition Fees Online via UPI</h3>
+<p class="text-xs text-slate-600 mt-1">Official Institutional Account: <strong class="text-amber-800 font-bold">jbninstitute@sbi</strong>. Immediate WhatsApp receipt generation.</p>
+</div>
+<a class="shrink-0 bg-amber-600 hover:bg-amber-700 text-white font-extrabold text-xs px-5 py-3 rounded-xl transition flex items-center gap-2 shadow-md shadow-amber-600/20" href="https://wa.me/919302100896?text=Namaste%20Hirdesh%20Sir,%20I%20want%20to%20pay%20tuition%20fee%20via%20UPI." target="_blank">
+<i class="w-4 h-4" data-lucide="qr-code"></i> Open UPI QR Counter
+      </a>
+</div>
+</div>
+</section>
+<!-- Footer (Crisp Light Palette) -->
+<footer class="bg-slate-50 pt-16 pb-12 border-t border-slate-200 text-xs text-slate-600">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="space-y-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center font-cinzel font-black text-white text-sm shadow-sm">JBN</div>
+<span class="text-slate-900 font-extrabold tracking-tight text-sm">JBN INSTITUTE</span>
+</div>
+<p class="leading-relaxed">Premier English coaching for Classes 9th, 10th, 11th &amp; 12th (MP Board &amp; CBSE) mentored by Hirdesh Sir in Bhind.</p>
+<div class="text-amber-800 font-cinzel text-[11px] font-bold tracking-wider">॥ ॐ नमः शिवाय ॥</div>
+</div>
+<div>
+<h4 class="text-slate-900 font-bold mb-3 uppercase tracking-wider text-[11px]">Academic Portals</h4>
+<ul class="space-y-2">
+<li><button class="hover:text-sky-700 text-sky-600 font-medium transition text-left cursor-pointer" onclick="openLoginModal('student')">Student Learning Portal</button></li>
+<li><button class="hover:text-amber-800 text-amber-700 font-medium transition text-left cursor-pointer" onclick="openLoginModal('admin')">Faculty CMS &amp; Admin</button></li>
+<li><a class="hover:text-slate-900 transition" href="#batches">Classes 9th–12th Schedules</a></li>
+<li><a class="hover:text-slate-900 transition" href="#demo-booking">Free 2-Day Demo Pass</a></li>
+<li><a class="hover:text-slate-900 transition" href="#fee-counter">Online Fee Payment Voucher</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 font-bold mb-3 uppercase tracking-wider text-[11px]">Contact &amp; Helpdesk</h4>
+<ul class="space-y-2">
+<li class="text-slate-800 font-semibold flex items-center gap-1.5"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="user"></i> Hirdesh Sir (Chief Mentor)</li>
+<li><a class="hover:text-amber-700 flex items-center gap-1.5" href="tel:+919302100896"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="phone"></i> +91 9302100896</a></li>
+<li><a class="hover:text-amber-700 flex items-center gap-1.5" href="https://wa.me/919302100896" target="_blank"><i class="w-3.5 h-3.5 text-emerald-600" data-lucide="message-circle"></i> +91 9302100896 (WhatsApp Inquiries)</a></li>
+<li class="flex items-center gap-1.5"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="mail"></i> jbninstitutebhind@gmail.com</li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 font-bold mb-3 uppercase tracking-wider text-[11px]">Campus Venue</h4>
+<p class="leading-relaxed mb-2 text-slate-700">
+<i class="w-3.5 h-3.5 text-amber-600 inline mr-1" data-lucide="map-pin"></i>
+          Ater Road, Bamba Ka Kinara, Bhind, Madhya Pradesh - 477001
+        </p>
+<p class="text-[11px] text-slate-500">Timings: 07:00 AM - 07:30 PM (Mon–Sat)</p>
+</div>
+</div>
+<div class="border-t border-slate-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+<div>© 2025 JBN Institute of English. Founded &amp; Mentored by Hirdesh Sir. All Rights Reserved.</div>
+<div>jbnclasses.vercel.app • Zero-Fabrication Verified Results</div>
+</div>
+</div>
+</footer>
+<!-- Interactive OTP Verification Login Modal (Light Mode Adapted) -->
+<div class="fixed inset-0 z-50 hidden bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto" id="loginModal">
+<div class="relative w-full max-w-lg bg-white border border-slate-200 rounded-3xl p-6 sm:p-7 shadow-2xl text-slate-800 my-8">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-4 mb-5 border-b border-slate-100">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center font-cinzel font-black text-white text-sm shadow">
+          JBN
+        </div>
+<div>
+<h3 class="text-base font-bold text-slate-900 leading-tight">JBN Academic Verification Portal</h3>
+<span class="text-[11px] text-amber-700 font-semibold font-cinzel">॥ ॐ नमः शिवाय ॥ • Secure OTP Access</span>
+</div>
+</div>
+<button class="text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100 transition" onclick="closeLoginModal()">
+<i class="w-5 h-5" data-lucide="x"></i>
+</button>
+</div>
+<!-- Navigation Tabs -->
+<div class="grid grid-cols-2 gap-2 p-1 bg-slate-100 rounded-xl mb-6 border border-slate-200 text-xs font-bold">
+<button class="py-2.5 px-3 rounded-lg transition flex items-center justify-center gap-2 bg-amber-500 text-white shadow" id="tabBtnStudent" onclick="switchLoginTab('student')">
+<i class="w-4 h-4" data-lucide="user-check"></i> Student Login (OTP)
+      </button>
+<button class="py-2.5 px-3 rounded-lg transition flex items-center justify-center gap-2 text-slate-600 hover:text-amber-700" id="tabBtnAdmin" onclick="switchLoginTab('admin')">
+<i class="w-4 h-4" data-lucide="shield"></i> Faculty Admin (Restricted)
+      </button>
+</div>
+<!-- TAB 1: STUDENT LOGIN (OTP / CREDENTIALS) -->
+<div class="space-y-4" id="tabContentStudent">
+<div class="bg-sky-50 border border-sky-200 rounded-xl p-3 text-xs text-sky-900 leading-relaxed flex items-start gap-2.5">
+<i class="w-4 h-4 text-sky-600 shrink-0 mt-0.5" data-lucide="info"></i>
+<div>
+<span class="font-bold text-sky-800">Enrollment Security:</span> Login using either Roll No or Enrolled Mobile Number with OTP verification. 
+          <span class="italic text-slate-600 block mt-0.5 text-[11px]">Credentials generated and verified by Hirdesh Sir / Institute Admin.</span>
+</div>
+</div>
+<form class="space-y-4" id="studentOtpForm" onsubmit="handleStudentAuth(event)">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Student Roll No or Registered Mobile *</label>
+<div class="relative">
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl pl-10 pr-24 py-3 text-sm text-slate-900 focus:outline-none focus:border-sky-500 focus:bg-white" id="studentIdentifier" placeholder="e.g. JBN-2025-1042 or 9876543210" required="" type="text"/>
+<i class="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" data-lucide="user"></i>
+<button class="absolute right-1.5 top-1.5 bottom-1.5 bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold px-3 rounded-lg transition disabled:opacity-50" id="btnStudentSendOtp" onclick="sendStudentOtp()" type="button">
+              Send OTP
+            </button>
+</div>
+<p class="text-[11px] text-emerald-600 hidden mt-1 flex items-center gap-1" id="studentOtpMsg">
+<i class="w-3.5 h-3.5" data-lucide="check-circle"></i> 6-digit verification code dispatched via WhatsApp/SMS.
+          </p>
+</div>
+<div class="space-y-1.5" id="studentOtpWrapper">
+<div class="flex justify-between items-center text-xs">
+<label class="font-semibold text-slate-700">6-Digit Verification Code (OTP) *</label>
+<span class="text-sky-600 font-mono text-[11px]" id="studentTimer">Resend in 00:45</span>
+</div>
+<div class="relative">
+<input class="w-full bg-slate-50 border border-slate-300 tracking-widest text-center text-lg font-mono rounded-xl py-2.5 text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white" id="studentOtpInput" maxlength="6" pattern="[0-9]{6}" placeholder="Enter 6-digit OTP (demo: 123456)" required="" type="text"/>
+<i class="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" data-lucide="key"></i>
+</div>
+<p class="text-[10px] text-slate-500">Default Sandbox Code: <code class="text-amber-700 font-mono font-bold">123456</code> or Sir's SMS code</p>
+</div>
+<div class="pt-2">
+<button class="w-full bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-500 hover:to-sky-600 text-white font-extrabold py-3.5 rounded-xl transition text-sm flex items-center justify-center gap-2 shadow-md shadow-sky-600/20" type="submit">
+<i class="w-4 h-4" data-lucide="log-in"></i> Access Student Learning Portal
+          </button>
+</div>
+</form>
+<div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px] text-slate-500">
+<a class="text-sky-600 font-semibold hover:underline flex items-center gap-1" href="student.html">
+<i class="w-3 h-3" data-lucide="external-link"></i> Direct student.html Preview
+        </a>
+<a class="hover:text-amber-700" href="https://wa.me/919302100896?text=Namaste%20Hirdesh%20Sir,%20I%20need%20my%20Student%20Portal%20Roll%20Number." target="_blank">
+          Need Roll No? Ask Sir
+        </a>
+</div>
+</div>
+<!-- TAB 2: FACULTY ADMIN LOGIN (RESTRICTED OTP) -->
+<div class="hidden space-y-4" id="tabContentAdmin">
+<div class="bg-amber-50 border border-amber-200 rounded-xl p-3.5 text-xs text-amber-900">
+<div class="flex items-center gap-1.5 font-bold text-amber-800 mb-1">
+<i class="w-4 h-4 text-amber-600" data-lucide="shield-alert"></i> STRICT ACCESS PROTOCOL
+        </div>
+<p class="text-[11px] leading-relaxed text-slate-700">
+          Admin access is strictly restricted to 3 authorized mobile numbers:
+        </p>
+<ul class="mt-1.5 space-y-1 font-mono text-[11px] text-amber-800 font-semibold">
+<li class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Primary: Hirdesh Sir (+91 9302100896)
+          </li>
+<li class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Secondary: +91 7909890041
+          </li>
+<li class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Tertiary: +91 7566880434
+          </li>
+</ul>
+</div>
+<!-- Alert Notification for Unauthorized Attempt -->
+<div class="hidden bg-red-50 border border-red-200 rounded-xl p-3 text-xs text-red-700 flex items-start gap-2" id="adminAuthAlert">
+<i class="w-4 h-4 text-red-500 shrink-0 mt-0.5" data-lucide="alert-triangle"></i>
+<div>
+<span class="font-bold text-red-900 block">Access Restricted!</span>
+          Only authorized administrative numbers (+91 9302100896, 7909890041, 7566880434) are permitted.
+        </div>
+</div>
+<form class="space-y-4" id="adminOtpForm" onsubmit="handleAdminAuth(event)">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Authorized Admin Mobile Number *</label>
+<div class="relative">
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl pl-10 pr-28 py-3 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white" id="adminPhoneInput" placeholder="Enter authorized 10-digit number" required="" type="tel"/>
+<i class="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" data-lucide="smartphone"></i>
+<button class="absolute right-1.5 top-1.5 bottom-1.5 bg-amber-500 hover:bg-amber-600 text-white text-xs font-extrabold px-3 rounded-lg transition disabled:opacity-50" id="btnAdminSendOtp" onclick="sendAdminOtp()" type="button">
+              Send OTP
+            </button>
+</div>
+<div class="flex items-center justify-between mt-1 text-[11px]">
+<span class="text-emerald-600 hidden flex items-center gap-1" id="adminOtpMsg">
+<i class="w-3.5 h-3.5" data-lucide="check-circle"></i> OTP sent to authorized device
+            </span>
+<span class="text-slate-500 text-[10px]">Select from quick fill:</span>
+</div>
+<!-- Quick select buttons for authorized testing -->
+<div class="flex flex-wrap gap-1.5 mt-1.5">
+<button class="text-[10px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-2 py-0.5 rounded border border-slate-200 font-mono" onclick="setAdminPhone('9302100896')" type="button">9302100896 (Hirdesh Sir)</button>
+<button class="text-[10px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-2 py-0.5 rounded border border-slate-200 font-mono" onclick="setAdminPhone('7909890041')" type="button">7909890041</button>
+<button class="text-[10px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-2 py-0.5 rounded border border-slate-200 font-mono" onclick="setAdminPhone('7566880434')" type="button">7566880434</button>
+</div>
+</div>
+<div class="space-y-1.5" id="adminOtpWrapper">
+<div class="flex justify-between items-center text-xs">
+<label class="font-semibold text-slate-700">6-Digit Admin Security OTP *</label>
+<span class="text-amber-700 font-mono text-[11px]" id="adminTimer">Resend in 00:45</span>
+</div>
+<div class="relative">
+<input class="w-full bg-slate-50 border border-slate-300 tracking-widest text-center text-lg font-mono rounded-xl py-2.5 text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white" id="adminOtpInput" maxlength="6" pattern="[0-9]{6}" placeholder="Enter 6-digit OTP (demo: 896896)" required="" type="text"/>
+<i class="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" data-lucide="lock"></i>
+</div>
+<p class="text-[10px] text-slate-500">Default Auth PIN: <code class="text-amber-700 font-mono font-bold">896896</code> or SMS code</p>
+</div>
+<div class="pt-2">
+<button class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-extrabold py-3.5 rounded-xl transition text-sm flex items-center justify-center gap-2 shadow-md shadow-amber-500/20" type="submit">
+<i class="w-4 h-4" data-lucide="shield-check"></i> Authenticate &amp; Enter Admin CMS
+          </button>
+</div>
+</form>
+<div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px] text-slate-500">
+<a class="text-amber-700 font-semibold hover:underline flex items-center gap-1" href="admin.html">
+<i class="w-3 h-3" data-lucide="external-link"></i> Direct admin.html Preview
+        </a>
+<span class="text-slate-400">Restricted to Hirdesh Sir &amp; Authorized Staff</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  lucide.createIcons();
+
+  // 2-Day Demo Booking submit handler
+  function handleDemoSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('studentName').value;
+    const phone = document.getElementById('studentPhone').value;
+    const cls = document.getElementById('studentClass').value;
+    const board = document.getElementById('studentBoard').value;
+    const notes = document.getElementById('studentNotes').value || 'Standard Demo Pass';
+
+    const text = `*New 2-Day Demo Request - JBN Institute*%0A%0A` +
+                 `*Student Name:* ${encodeURIComponent(name)}%0A` +
+                 `*Phone / WhatsApp:* ${encodeURIComponent(phone)}%0A` +
+                 `*Target Class:* ${encodeURIComponent(cls)}%0A` +
+                 `*Board:* ${encodeURIComponent(board)}%0A` +
+                 `*Notes/Problem:* ${encodeURIComponent(notes)}%0A%0A` +
+                 `_Dispatched from jbnclasses.vercel.app_`;
+
+    window.open(`https://wa.me/919302100896?text=${text}`, '_blank');
+  }
+
+  // Modal Opening and Tab switching logic
+  function openLoginModal(tab) {
+    const modal = document.getElementById('loginModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      switchLoginTab(tab || 'student');
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    }
+  }
+
+  function closeLoginModal() {
+    const modal = document.getElementById('loginModal');
+    if (modal) {
+      modal.classList.add('hidden');
+    }
+  }
+
+  function switchLoginTab(tab) {
+    const studentContent = document.getElementById('tabContentStudent');
+    const adminContent = document.getElementById('tabContentAdmin');
+    const tabBtnStudent = document.getElementById('tabBtnStudent');
+    const tabBtnAdmin = document.getElementById('tabBtnAdmin');
+    const adminAlert = document.getElementById('adminAuthAlert');
+
+    if (adminAlert) adminAlert.classList.add('hidden');
+
+    if (tab === 'admin') {
+      studentContent.classList.add('hidden');
+      adminContent.classList.remove('hidden');
+      tabBtnAdmin.className = 'py-2.5 px-3 rounded-lg transition flex items-center justify-center gap-2 bg-amber-500 text-white shadow';
+      tabBtnStudent.className = 'py-2.5 px-3 rounded-lg transition flex items-center justify-center gap-2 text-slate-600 hover:text-amber-700';
+    } else {
+      adminContent.classList.add('hidden');
+      studentContent.classList.remove('hidden');
+      tabBtnStudent.className = 'py-2.5 px-3 rounded-lg transition flex items-center justify-center gap-2 bg-amber-500 text-white shadow';
+      tabBtnAdmin.className = 'py-2.5 px-3 rounded-lg transition flex items-center justify-center gap-2 text-slate-600 hover:text-amber-700';
+    }
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  }
+
+  // Authorized numbers configuration
+  const AUTHORIZED_ADMIN_NUMBERS = [
+    '9302100896',
+    '7909890041',
+    '7566880434',
+    '+919302100896',
+    '+917909890041',
+    '+917566880434'
+  ];
+
+  function cleanPhoneNumber(phone) {
+    return phone.replace(/[^0-9]/g, '').slice(-10);
+  }
+
+  function setAdminPhone(num) {
+    const input = document.getElementById('adminPhoneInput');
+    if (input) {
+      input.value = num;
+      document.getElementById('adminAuthAlert')?.classList.add('hidden');
+    }
+  }
+
+  // Timer variables
+  let studentTimerInterval = null;
+  let adminTimerInterval = null;
+
+  function startTimer(timerElId, btnElId) {
+    let timeLeft = 45;
+    const timerEl = document.getElementById(timerElId);
+    const btnEl = document.getElementById(btnElId);
+    if (btnEl) btnEl.disabled = true;
+
+    const interval = setInterval(() => {
+      timeLeft--;
+      const formatted = timeLeft < 10 ? `00:0${timeLeft}` : `00:${timeLeft}`;
+      if (timerEl) timerEl.innerText = `Resend in ${formatted}`;
+      if (timeLeft <= 0) {
+        clearInterval(interval);
+        if (timerEl) timerEl.innerText = 'Resend OTP ready';
+        if (btnEl) btnEl.disabled = false;
+      }
+    }, 1000);
+    return interval;
+  }
+
+  // Student OTP Trigger
+  function sendStudentOtp() {
+    const ident = document.getElementById('studentIdentifier').value.trim();
+    if (!ident) {
+      alert('Please enter your Student Roll Number or Enrolled WhatsApp Number.');
+      document.getElementById('studentIdentifier').focus();
+      return;
+    }
+    const msg = document.getElementById('studentOtpMsg');
+    if (msg) msg.classList.remove('hidden');
+
+    if (studentTimerInterval) clearInterval(studentTimerInterval);
+    studentTimerInterval = startTimer('studentTimer', 'btnStudentSendOtp');
+
+    // Autofill dummy for effortless sandbox demo
+    const otpInput = document.getElementById('studentOtpInput');
+    if (otpInput && !otpInput.value) {
+      otpInput.value = '123456';
+    }
+  }
+
+  function handleStudentAuth(e) {
+    e.preventDefault();
+    const ident = document.getElementById('studentIdentifier').value.trim();
+    const otp = document.getElementById('studentOtpInput').value.trim();
+
+    if (!ident) {
+      alert('Please provide student credentials.');
+      return;
+    }
+    if (!otp || otp.length < 4) {
+      alert('Please enter valid 6-digit OTP.');
+      return;
+    }
+
+    // Successful verification -> Route to student portal
+    window.location.href = 'student.html';
+  }
+
+  // Admin OTP Trigger with strict number whitelist validation
+  function sendAdminOtp() {
+    const rawInput = document.getElementById('adminPhoneInput').value.trim();
+    const cleanNum = cleanPhoneNumber(rawInput);
+    const alertBox = document.getElementById('adminAuthAlert');
+    const msgBox = document.getElementById('adminOtpMsg');
+
+    const isAuthorized = AUTHORIZED_ADMIN_NUMBERS.some(num => cleanPhoneNumber(num) === cleanNum);
+
+    if (!cleanNum || !isAuthorized) {
+      if (alertBox) {
+        alertBox.classList.remove('hidden');
+        if (window.lucide) lucide.createIcons();
+      }
+      if (msgBox) msgBox.classList.add('hidden');
+      alert('Access Restricted: Only authorized administrative numbers (+91 9302100896, 7909890041, 7566880434) are permitted.');
+      return;
+    }
+
+    // Valid Authorized Number
+    if (alertBox) alertBox.classList.add('hidden');
+    if (msgBox) msgBox.classList.remove('hidden');
+
+    if (adminTimerInterval) clearInterval(adminTimerInterval);
+    adminTimerInterval = startTimer('adminTimer', 'btnAdminSendOtp');
+
+    const otpInput = document.getElementById('adminOtpInput');
+    if (otpInput && !otpInput.value) {
+      otpInput.value = '896896';
+    }
+  }
+
+  function handleAdminAuth(e) {
+    e.preventDefault();
+    const rawInput = document.getElementById('adminPhoneInput').value.trim();
+    const cleanNum = cleanPhoneNumber(rawInput);
+    const alertBox = document.getElementById('adminAuthAlert');
+    const otp = document.getElementById('adminOtpInput').value.trim();
+
+    const isAuthorized = AUTHORIZED_ADMIN_NUMBERS.some(num => cleanPhoneNumber(num) === cleanNum);
+
+    if (!isAuthorized) {
+      if (alertBox) alertBox.classList.remove('hidden');
+      alert('Access Restricted: Only authorized administrative numbers (+91 9302100896, 7909890041, 7566880434) are permitted.');
+      return;
+    }
+
+    if (!otp || otp.length < 4) {
+      alert('Please enter the 6-digit admin security code.');
+      return;
+    }
+
+    // Authorized -> Route to admin.html CMS
+    window.location.href = 'admin.html';
+  }
+
+  // Dismiss on background backdrop click
+  document.getElementById('loginModal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeLoginModal();
+    }
+  });
+</script>
+</body></html>

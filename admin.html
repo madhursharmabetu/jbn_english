@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Master Admin &amp; Website Content CMS Portal | JBN Institute</title>
+<meta content="Administrative control center for Hirdesh Sir to manage batch schedules, student leads, announcements, and fee records at JBN Institute of English." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#d97706',
+              amber: '#b45309',
+              navy: '#0f172a',
+              card: 'rgba(255, 255, 255, 0.92)',
+              border: '#e2e8f0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link data-snapdom="injected-import" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Cinzel:wght@600;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body { 
+      font-family: 'Plus Jakarta Sans', sans-serif; 
+      background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1VlBk-DGe5EnCSJW6KApOjszXelQT5QK8AgAtYDfzUmf0BcAYfrzbW4gBi6zpx3ojWM0XCj9uwKyRMz_gM5ATEgaXSGnILhjRFAq1OUSoKuM-sislw0S2o4kfAiuw9e1KH1Zl_vx3DYdhMH-4vYPDtLKIOeq9T0COeQyqQZKCwQ3kg4cPnCC6cHGeoJ_FoewIhma3WPSQes8_FrfrVvooG6rjwH5RwLuxLjOwAsALrXEu8qYa0rI5LCUg'); 
+      background-attachment: fixed; 
+      background-size: cover; 
+      background-position: center;
+    }
+    .font-cinzel { font-family: 'Cinzel', serif; }
+    /* Custom scrollbar styling for tables */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #d97706; }
+</style>
+</head>
+<body class="text-slate-800 min-h-screen antialiased selection:bg-amber-200 selection:text-amber-950 pb-12">
+<!-- Top Spiritual Admin Bar -->
+<div class="bg-white/95 backdrop-blur-md border-b border-amber-200/80 text-xs py-1.5 px-4 text-amber-950 sticky top-0 z-50 shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-[11px] gap-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-cinzel text-amber-700 font-bold tracking-wider">॥ ॐ नमः शिवाय ॥</span>
+<span class="text-slate-300">|</span>
+<span class="text-slate-700 tracking-tight font-semibold">MASTER ADMIN CONTROL SYSTEM • SESSION 2025–26</span>
+</div>
+<div class="flex items-center gap-4 text-slate-600">
+<span class="flex items-center gap-1.5 text-emerald-700 font-semibold"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Production Database Connected</span>
+<span class="hidden sm:inline text-slate-300">|</span>
+<span class="text-slate-600 font-medium">Ater Road, Bhind (M.P.)</span>
+</div>
+</div>
+</div>
+<!-- Security & Admin Authentication Banner (3 Authorized Admin Numbers) -->
+<div class="bg-amber-50/85 backdrop-blur-md border-b border-amber-200/70 px-4 py-2 shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-3 text-xs">
+<div class="flex items-center gap-3 flex-wrap">
+<span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 border border-emerald-300 px-2.5 py-1 rounded-full font-bold text-[11px]">
+<span class="w-2 h-2 rounded-full bg-emerald-600 animate-ping"></span>
+        Authorized Administrator Session Active
+      </span>
+<span class="inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded font-mono text-[10px] font-semibold">
+<i class="w-3.5 h-3.5 text-amber-700" data-lucide="shield-check"></i> OTP Verified &amp; 2FA Secure
+      </span>
+</div>
+<!-- 3 Authorized Administrative Access Contacts -->
+<div class="flex items-center gap-2 sm:gap-4 flex-wrap text-[11px]">
+<span class="text-slate-600 font-semibold flex items-center gap-1"><i class="w-3 h-3 text-amber-600" data-lucide="lock"></i> Authorized Admins:</span>
+<div class="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-amber-200 shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="text-slate-700 font-bold">Founder: Hirdesh Sir</span>
+<a class="text-amber-700 font-mono hover:underline font-semibold" href="tel:+919302100896">+91 9302100896</a>
+</div>
+<div class="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="text-slate-600">Desk 1:</span>
+<a class="text-amber-700 font-mono hover:underline font-medium" href="tel:+917909890041">+91 7909890041</a>
+</div>
+<div class="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="text-slate-600">Desk 2:</span>
+<a class="text-amber-700 font-mono hover:underline font-medium" href="tel:+917566880434">+91 7566880434</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Navbar -->
+<header class="bg-white/95 border-b border-slate-200/80 sticky top-7 z-40 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-2 group" href="#">
+<div class="w-9 h-9 rounded-lg bg-amber-500 flex items-center justify-center font-cinzel font-black text-white text-sm shadow-sm group-hover:scale-105 transition">JBN</div>
+<div>
+<div class="text-sm font-black text-slate-900 leading-tight">JBN INSTITUTE <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded ml-1 border border-red-200 font-semibold">Master CMS</span></div>
+<div class="text-[10px] text-amber-700 font-bold tracking-wider">Hirdesh Sir's Control Desk</div>
+</div>
+</a>
+</div>
+<nav class="hidden xl:flex items-center gap-5 text-xs font-semibold text-slate-600">
+<a class="hover:text-amber-700 transition flex items-center gap-1 pb-1 border-b-2 border-transparent hover:border-amber-600" href="#leads"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="inbox"></i> Leads (<span id="navLeadsCount">1</span>)</a>
+<a class="hover:text-amber-700 transition flex items-center gap-1 pb-1 border-b-2 border-transparent hover:border-amber-600" href="#students-management"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="users"></i> Students (<span id="navStudentsCount">7</span>)</a>
+<a class="hover:text-amber-700 transition flex items-center gap-1 pb-1 border-b-2 border-transparent hover:border-amber-600" href="#attendance-console"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="calendar-check"></i> Daily Attendance</a>
+<a class="hover:text-amber-700 transition flex items-center gap-1 pb-1 border-b-2 border-transparent hover:border-amber-600" href="#batches"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="layers"></i> Batches &amp; Fees</a>
+<a class="hover:text-amber-700 transition flex items-center gap-1 pb-1 border-b-2 border-transparent hover:border-amber-600" href="#lesson-planner"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="calendar"></i> Lesson Planner</a>
+<a class="hover:text-amber-700 transition flex items-center gap-1 pb-1 border-b-2 border-transparent hover:border-amber-600" href="#notes-uploader"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="file-text"></i> Upload Notes &amp; Content</a>
+<a class="hover:text-amber-700 transition flex items-center gap-1 pb-1 border-b-2 border-transparent hover:border-amber-600" href="#cms-info"><i class="w-3.5 h-3.5 text-amber-600" data-lucide="settings"></i> Institute Profile</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs px-3.5 py-2 rounded-lg shadow hover:shadow-amber-500/20 transition flex items-center gap-1.5" onclick="saveAllChanges(true)">
+<i class="w-3.5 h-3.5" data-lucide="save"></i> Save Live (Ctrl+S)
+      </button>
+<button class="bg-white hover:bg-slate-50 text-slate-700 text-xs font-bold px-3 py-2 rounded-lg border border-slate-300 transition flex items-center gap-1.5 shadow-xs" onclick="previewPublicLiveSite()">
+<i class="w-3.5 h-3.5 text-slate-500" data-lucide="external-link"></i> Live Public Site
+      </button>
+</div>
+</div>
+</header>
+<!-- Global Notification Toast System -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none" id="toastContainer"></div>
+<!-- Main Workspace -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+<!-- Section 1: Inbound Demo Leads & Admissions Desk -->
+<div class="bg-white/92 backdrop-blur-md border border-amber-200/90 rounded-2xl p-6 shadow-md" id="leads">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-6">
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="text-xs bg-amber-100 text-amber-800 border border-amber-300/70 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">Live Admissions Desk</span>
+<span class="text-xs bg-emerald-50 text-emerald-700 border border-emerald-300 px-2 py-0.5 rounded font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> Real Sync Active (<span id="leadsHeaderCount">1 Active</span>)
+          </span>
+</div>
+<h2 class="text-xl font-extrabold text-slate-900 mt-1">2-Day Demo Class Bookings &amp; Inquiries</h2>
+<p class="text-xs text-slate-500 font-medium">Capturing verified leads directly from student submissions on the live public portal.</p>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow" onclick="openLeadModal()">
+<i class="w-3.5 h-3.5" data-lucide="plus"></i> + Add Inquiry Manually
+        </button>
+<button class="bg-white hover:bg-slate-100 text-slate-700 text-xs font-semibold px-3.5 py-2 rounded-xl border border-slate-300 transition flex items-center gap-1.5 shadow-xs" onclick="exportLeadsCSV()">
+<i class="w-3.5 h-3.5 text-slate-500" data-lucide="download"></i> Export CSV
+        </button>
+</div>
+</div>
+<div class="mb-4 p-3 bg-amber-50/70 border border-amber-200/80 rounded-xl text-xs flex items-center justify-between gap-2 text-slate-700">
+<span class="flex items-center gap-1.5">
+<i class="w-4 h-4 text-amber-600 shrink-0" data-lucide="sparkles"></i>
+<span><strong class="text-amber-800">Real-Time Ingestion:</strong> Inquiries submitted from homepage or walk-ins are stored in persistent local storage.</span>
+</span>
+<span class="text-[11px] text-emerald-700 font-mono shrink-0 font-bold bg-emerald-100/80 px-2 py-0.5 rounded">Auto-sync: Active</span>
+</div>
+<div class="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+<table class="w-full text-xs text-left">
+<thead class="bg-slate-50 text-slate-600 uppercase text-[10px] border-b border-slate-200 font-bold">
+<tr>
+<th class="py-3 px-3">Student Name</th>
+<th class="py-3 px-3">Parent Phone</th>
+<th class="py-3 px-3">Target Class</th>
+<th class="py-3 px-3">Board &amp; Medium</th>
+<th class="py-3 px-3">Problem / Notes</th>
+<th class="py-3 px-3 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 text-slate-700" id="leadsTableBody">
+<!-- Dynamically populated -->
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section 2: Batch Timetable, Seat Allocation & Fees CMS -->
+<div class="bg-white/92 backdrop-blur-md border border-slate-200/90 rounded-2xl p-6 shadow-md" id="batches">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-xs bg-blue-100 text-blue-800 border border-blue-200 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">Batch Architecture</span>
+<span class="text-xs text-slate-500 font-medium"><span id="totalBatchesCount">4</span> Active Class Batches</span>
+</div>
+<h2 class="text-lg font-bold text-slate-900 mt-1">Classroom Batch Architecture &amp; Tuition Fees</h2>
+<p class="text-xs text-slate-500">Edits made here reflect instantly across student enrollment cards and daily attendance registers.</p>
+</div>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow" onclick="openAddBatchModal()">
+<i class="w-3.5 h-3.5" data-lucide="plus"></i> Add New Batch
+      </button>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="batchesGrid">
+<!-- Populated dynamically via JS -->
+</div>
+</div>
+<!-- Section 3: Enrolled Students & Registration Console -->
+<div class="bg-white/92 backdrop-blur-md border border-amber-200/90 rounded-2xl p-6 shadow-md space-y-6" id="students-management">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-xs bg-amber-100 text-amber-800 border border-amber-300 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">Student Directory &amp; Admissions</span>
+<span class="text-xs text-slate-600 font-semibold" id="studentsTotalBadge">142 Enrolled Across All 4 Batches</span>
+</div>
+<h2 class="text-xl font-black text-slate-900 mt-1">Enrolled Students &amp; Official Registration</h2>
+<p class="text-xs text-amber-800 font-medium mt-0.5">Note: Student login credentials can only be created, edited, and approved from this Admin Console.</p>
+</div>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-xl shadow transition flex items-center gap-1.5" onclick="toggleStudentRegisterForm()">
+<i class="w-4 h-4" data-lucide="user-plus"></i> <span id="toggleRegisterBtnText">+ Add New Student</span>
+</button>
+</div>
+<!-- New Student Form / Collapsible -->
+<div class="bg-amber-50/60 border border-amber-200 rounded-xl p-5 transition-all duration-300 shadow-xs" id="studentFormWrapper">
+<div class="flex justify-between items-center mb-3">
+<h3 class="text-sm font-bold text-amber-900 flex items-center gap-2">
+<i class="w-4 h-4 text-amber-600" data-lucide="shield-check"></i> Register New Student (Admin Authority Only)
+        </h3>
+<span class="text-[11px] text-emerald-800 font-semibold bg-emerald-100 px-2 py-0.5 rounded border border-emerald-200">Hirdesh Sir's Master Verification</span>
+</div>
+<form class="space-y-4" id="newStudentForm" onsubmit="handleStudentCreation(event)">
+<div class="grid md:grid-cols-3 lg:grid-cols-6 gap-3">
+<div class="lg:col-span-2">
+<label class="text-[11px] text-slate-700 block mb-1 font-semibold">Student Full Name *</label>
+<input class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 placeholder:text-slate-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none" id="regStudentName" placeholder="e.g. Aman Sharma" required="" type="text"/>
+</div>
+<div>
+<label class="text-[11px] text-slate-700 block mb-1 font-semibold flex items-center justify-between">
+<span>Roll No / ID</span>
+<button class="text-[10px] text-amber-700 hover:underline font-bold" onclick="autoGenerateRollId()" type="button">Auto-Gen</button>
+</label>
+<input class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-amber-800 font-mono font-bold focus:border-amber-500 focus:outline-none" id="regRollId" required="" type="text" value="JBN-2025-10B-089"/>
+</div>
+<div>
+<label class="text-[11px] text-slate-700 block mb-1 font-semibold">Target Class *</label>
+<select class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:outline-none" id="regTargetClass">
+<option value="Class 10th Intensive">Class 10th Intensive</option>
+<option selected="" value="Class 12th Super 50">Class 12th Super 50</option>
+<option value="Class 9th Foundation">Class 9th Foundation</option>
+<option value="Class 11th Core Literature">Class 11th Core Literature</option>
+</select>
+</div>
+<div>
+<label class="text-[11px] text-slate-700 block mb-1 font-semibold">Board &amp; Medium</label>
+<select class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:outline-none" id="regBoard">
+<option>MP Board (Hindi Med.)</option>
+<option>MP Board (Eng Med.)</option>
+<option>CBSE (English Med.)</option>
+</select>
+</div>
+<div>
+<label class="text-[11px] text-slate-700 block mb-1 font-semibold">Parent / Student Phone *</label>
+<input class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 font-mono focus:border-amber-500 focus:outline-none" id="regStudentPhone" oninput="syncPhoneToAuth(this.value)" placeholder="+91 98XXX XXXXX" required="" type="tel" value="+91 98263 11984"/>
+</div>
+</div>
+<!-- Explicit Credential Generator Box -->
+<div class="bg-white border border-slate-200 rounded-xl p-3.5 space-y-2 shadow-xs">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="text-xs font-bold text-amber-800 flex items-center gap-1.5">
+<i class="w-3.5 h-3.5 text-amber-600" data-lucide="key"></i> Generate Student Credentials &amp; Access Pass
+            </span>
+<span class="text-[10px] text-slate-500">Strict Auth: Handout downloads &amp; attendance ledger are tied to this profile</span>
+</div>
+<div class="grid md:grid-cols-3 gap-3">
+<div>
+<label class="text-[10px] text-slate-600 block mb-1 font-semibold">OTP Verification Authorization Phone</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded px-2.5 py-1.5 text-xs text-amber-900 font-mono font-semibold" id="regAuthPhone" type="text" value="+91 98263 11984"/>
+</div>
+<div>
+<label class="text-[10px] text-slate-600 block mb-1 font-semibold">Default Secure Password / PIN</label>
+<div class="flex gap-1.5">
+<input class="w-full bg-slate-50 border border-slate-300 rounded px-2.5 py-1.5 text-xs text-emerald-800 font-mono font-bold" id="regPassword" type="text" value="JBN@Bhind2025"/>
+<button class="bg-slate-100 hover:bg-slate-200 text-[10px] text-slate-700 px-2.5 py-1 rounded border border-slate-300 whitespace-nowrap font-medium" onclick="document.getElementById('regPassword').value='JBN#'+Math.floor(1000+Math.random()*9000);" type="button">Regen</button>
+</div>
+</div>
+<div>
+<label class="text-[10px] text-slate-600 block mb-1 font-semibold">Fee Status / Initial Deposit</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded px-2.5 py-1.5 text-xs text-slate-800 font-medium" id="regFeeStatus">
+<option value="Paid (Apr 2025)">Paid (Apr 2025)</option>
+<option value="₹400 Due">₹400 Due</option>
+<option value="₹800 Due">₹800 Due</option>
+<option value="Scholarship Free">Scholarship 100% Free</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row justify-between items-center gap-3 pt-1">
+<p class="text-[11px] text-slate-500">
+<i class="w-3.5 h-3.5 inline text-amber-600 mr-1" data-lucide="info"></i> Admin verification logs timestamp and authorizer ID on activation.
+          </p>
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<button class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-2 px-3.5 rounded-lg transition flex items-center justify-center gap-1.5 shadow-xs" onclick="sendCredentialsWhatsApp()" type="button">
+<i class="w-3.5 h-3.5" data-lucide="message-square"></i> 1-Tap Send Login to WhatsApp
+            </button>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold py-2 px-4 rounded-lg transition flex items-center justify-center gap-1.5 shadow" type="submit">
+<i class="w-3.5 h-3.5" data-lucide="check"></i> Save &amp; Activate Access
+            </button>
+</div>
+</div>
+</form>
+</div>
+<!-- Search & Filter Bar -->
+<div class="flex flex-col sm:flex-row justify-between items-center gap-3 bg-white p-3 rounded-xl border border-slate-200 shadow-xs">
+<div class="relative w-full sm:w-80">
+<i class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" data-lucide="search"></i>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-9 pr-3 py-1.5 text-xs text-slate-800 placeholder:text-slate-400 focus:border-amber-500 focus:bg-white focus:outline-none" id="studentSearchInput" oninput="renderStudentsTable()" placeholder="Search by name, roll no, or phone..." type="text"/>
+</div>
+<div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+<label class="text-xs text-slate-600 font-semibold">Filter Class:</label>
+<select class="bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-700 focus:border-amber-500 font-medium" id="studentFilterClass" onchange="renderStudentsTable()">
+<option value="ALL">All Batches</option>
+<option value="Class 12th Super 50">Class 12th Super 50</option>
+<option value="Class 10th Intensive">Class 10th Intensive</option>
+<option value="Class 9th Foundation">Class 9th Foundation</option>
+<option value="Class 11th Core Literature">Class 11th Core Literature</option>
+</select>
+</div>
+</div>
+<!-- Registered Students Table -->
+<div class="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+<table class="w-full text-xs text-left" id="studentsMainTable">
+<thead class="bg-slate-50 text-slate-600 uppercase text-[10px] border-b border-slate-200 font-bold">
+<tr>
+<th class="py-3 px-3">Roll ID</th>
+<th class="py-3 px-3">Student Name</th>
+<th class="py-3 px-3">Assigned Class</th>
+<th class="py-3 px-3">Board</th>
+<th class="py-3 px-3">Parent Phone</th>
+<th class="py-3 px-3">Fee Status</th>
+<th class="py-3 px-3 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 text-slate-700" id="studentsTableBody">
+<!-- Populated dynamically via JS -->
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section 4: Daily Student Attendance Marking Console -->
+<div class="bg-white/92 backdrop-blur-md border border-slate-200/90 rounded-2xl p-6 shadow-md space-y-5" id="attendance-console">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-xs bg-emerald-100 text-emerald-800 border border-emerald-300 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">Faculty Attendance Ledger</span>
+<span class="text-xs text-amber-800 font-semibold bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Strict Rule: Only Admin &amp; Faculty Can Mark</span>
+</div>
+<h2 class="text-xl font-black text-slate-900 mt-1">Daily Student Attendance Marking Console</h2>
+<p class="text-xs text-slate-500 font-medium">Students cannot self-mark attendance. Hirdesh Sir verifies attendance physically at the classroom door every evening.</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right text-xs font-mono text-slate-600 hidden sm:block">
+<div>Session Date: <span class="text-amber-700 font-bold" id="attendanceCurrentDate">Today, 26-Apr-2025</span></div>
+<div class="text-[11px] text-slate-500">Active Batch: <span class="text-emerald-700 font-bold" id="attendanceBatchIndicator">Class 10th Intensive</span></div>
+</div>
+<button class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow transition flex items-center gap-2" onclick="submitDailyAttendance()">
+<i class="w-4 h-4" data-lucide="check-circle-2"></i> Submit Daily Attendance
+        </button>
+</div>
+</div>
+<!-- Batch Selector & Quick Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pt-2 pb-1 border-y border-slate-200">
+<div class="flex flex-wrap items-center gap-2 text-xs font-bold" id="attendanceBatchTabs">
+<span class="text-slate-500 font-semibold mr-1">Select Batch:</span>
+<button class="att-batch-btn bg-amber-600 text-white px-3.5 py-1.5 rounded-lg font-bold transition shadow-xs" data-batch="Class 10th Intensive" onclick="switchAttendanceBatch('Class 10th Intensive')">Class 10th Intensive (04:30 PM)</button>
+<button class="att-batch-btn bg-white hover:bg-slate-100 text-slate-700 px-3.5 py-1.5 rounded-lg border border-slate-300 font-medium transition" data-batch="Class 12th Super 50" onclick="switchAttendanceBatch('Class 12th Super 50')">Class 12th Super 50 (06:30 PM)</button>
+<button class="att-batch-btn bg-white hover:bg-slate-100 text-slate-700 px-3.5 py-1.5 rounded-lg border border-slate-300 font-medium transition" data-batch="Class 9th Foundation" onclick="switchAttendanceBatch('Class 9th Foundation')">Class 9th Foundation (03:30 PM)</button>
+<button class="att-batch-btn bg-white hover:bg-slate-100 text-slate-700 px-3.5 py-1.5 rounded-lg border border-slate-300 font-medium transition" data-batch="Class 11th Core Literature" onclick="switchAttendanceBatch('Class 11th Core Literature')">Class 11th Literature (05:30 PM)</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-xs bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 px-3 py-1.5 rounded-lg transition font-bold flex items-center gap-1" onclick="markAllAttendance('Present')">
+<i class="w-3.5 h-3.5" data-lucide="check-check"></i> Mark All Present
+        </button>
+<button class="text-xs bg-red-50 hover:bg-red-100 text-red-800 border border-red-300 px-3 py-1.5 rounded-lg transition font-medium" onclick="markAllAttendance('Absent')">
+          Mark All Absent
+        </button>
+</div>
+</div>
+<!-- Attendance Roster -->
+<div class="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+<table class="w-full text-xs text-left">
+<thead class="bg-slate-50 text-slate-600 uppercase text-[10px] border-b border-slate-200 font-bold">
+<tr>
+<th class="py-3 px-3">Roll ID</th>
+<th class="py-3 px-3">Student Name</th>
+<th class="py-3 px-3">Batch Timing</th>
+<th class="py-3 px-3">Parent Phone</th>
+<th class="py-3 px-3 text-center">Attendance Status (Click to Toggle)</th>
+<th class="py-3 px-3 text-right">SMS / WhatsApp Alert</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 text-slate-700" id="attendanceTableBody">
+<!-- Populated dynamically via JS based on selected batch -->
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section 5: Weekly Timetable & Daily Lesson Planner -->
+<div class="bg-white/92 backdrop-blur-md border border-slate-200/90 rounded-2xl p-6 shadow-md space-y-6" id="lesson-planner">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="text-xs bg-indigo-100 text-indigo-800 border border-indigo-200 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">Curriculum &amp; Timetable</span>
+<span class="text-xs text-slate-500 font-medium">Session 2025-26 Planner</span>
+</div>
+<h2 class="text-xl font-black text-slate-900 mt-1">Weekly Timetable &amp; Daily Lesson Planner</h2>
+<p class="text-xs text-slate-500">Admin schedules topic coverage, homework assignments, and special revision classes for each batch.</p>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-xl transition flex items-center gap-1.5 shadow" onclick="openAddLessonModal()">
+<i class="w-3.5 h-3.5" data-lucide="plus"></i> + Add Lesson Plan
+        </button>
+<button class="bg-white hover:bg-slate-100 text-slate-700 text-xs font-semibold px-3.5 py-2 rounded-xl border border-slate-300 transition flex items-center gap-1.5 shadow-xs" onclick="saveAllChanges(true)">
+<i class="w-3.5 h-3.5 text-slate-500" data-lucide="save"></i> Update Schedules
+        </button>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="lessonsGrid">
+<!-- Populated dynamically via JS -->
+</div>
+</div>
+<!-- Section 6: Comprehensive Multi-Format Study Notes & Text Content Uploader -->
+<div class="bg-white/92 backdrop-blur-md border border-slate-200/90 rounded-2xl p-6 shadow-md space-y-6" id="notes-uploader">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="text-xs bg-red-100 text-red-800 border border-red-200 px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">Multi-Format CMS &amp; Handouts</span>
+<span class="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-slate-200 font-medium">PDF • Scans / JPEG • Word (.docx) • Rich Board Text</span>
+</div>
+<h2 class="text-xl font-black text-slate-900 mt-1">Upload Notes &amp; Study Materials Manager</h2>
+<p class="text-xs text-slate-500">Publish handwritten scans, PDF booklets, Word tests, or direct inline board notes to the student portal.</p>
+</div>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-xl transition flex items-center gap-1.5 shadow" onclick="document.getElementById('uploaderFormWrapper').scrollIntoView({behavior:'smooth'}); document.getElementById('noteTitle').focus();">
+<i class="w-4 h-4" data-lucide="upload-cloud"></i> + New Material / Handout
+      </button>
+</div>
+<!-- Upload Form with Multi-format support -->
+<div class="bg-amber-50/60 border border-amber-200 rounded-xl p-5 space-y-4 shadow-xs" id="uploaderFormWrapper">
+<div class="flex items-center justify-between pb-3 border-b border-amber-200">
+<span class="text-xs font-bold text-amber-900 flex items-center gap-1.5">
+<i class="w-4 h-4 text-amber-600" data-lucide="file-plus"></i> Create &amp; Dispatch New Learning Material
+        </span>
+<span class="text-[11px] text-slate-500 font-medium">Supports .pdf, .jpg, .jpeg, .png, .doc, .docx or Direct Text</span>
+</div>
+<form class="space-y-4" id="notesPublishForm" onsubmit="handleNotesPublish(event)">
+<div class="grid md:grid-cols-3 gap-4">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Note / Handout Title *</label>
+<input class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 placeholder:text-slate-400 focus:border-amber-500 focus:outline-none" id="noteTitle" placeholder="e.g. 100 Golden Rules of Subject-Verb Concord" required="" type="text"/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Target Class / Batch *</label>
+<select class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:outline-none" id="noteBatch">
+<option value="Class 12th Super 50">Class 12th Super 50</option>
+<option value="Class 10th Intensive">Class 10th Intensive</option>
+<option value="Class 11th Core Literature">Class 11th Core Literature</option>
+<option value="Class 9th Foundation">Class 9th Foundation</option>
+<option value="All Batches">All Batches (Common Grammar Series)</option>
+</select>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Category / Tag *</label>
+<select class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:outline-none" id="noteCategory">
+<option value="Grammar Formula">Grammar Formula</option>
+<option value="NCERT Literature Hindi Decode">NCERT Literature Hindi Decode</option>
+<option value="Board Question Bank">Board Question Bank</option>
+<option value="Quick Written Notes">Quick Written Notes</option>
+</select>
+</div>
+</div>
+<!-- Multi-format Attachment Section -->
+<div class="grid md:grid-cols-2 gap-4 pt-1">
+<div class="space-y-2">
+<label class="text-xs font-semibold text-slate-700 block">File Attachment (PDF, Image Scans, or Word Docs)</label>
+<div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl space-y-2">
+<input accept=".pdf,.jpeg,.jpg,.png,.docx,.doc" class="text-xs text-slate-600 file:mr-2 file:py-1 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-amber-100 file:text-amber-900 hover:file:bg-amber-200 cursor-pointer w-full" id="noteFile" type="file"/>
+<div class="text-[10px] text-slate-500 flex items-center gap-2 flex-wrap font-medium">
+<span class="px-1.5 py-0.5 rounded bg-red-100 text-red-700 font-bold border border-red-200">.PDF</span>
+<span class="px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 font-bold border border-blue-200">.JPG / .PNG</span>
+<span class="px-1.5 py-0.5 rounded bg-indigo-100 text-indigo-700 font-bold border border-indigo-200">.DOCX / .DOC</span>
+<span class="text-slate-500">(Max 25MB high-res handwritten scans supported)</span>
+</div>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-semibold text-slate-700 block">Or Cloud Link / Google Drive Handout URL</label>
+<input class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-amber-800 font-mono focus:border-amber-500 focus:outline-none" id="noteLink" placeholder="https://drive.google.com/file/d/... or secure cloud link" type="url"/>
+<p class="text-[10px] text-slate-500">Students can download full high-resolution notes directly on phone or tablet.</p>
+</div>
+</div>
+<!-- Direct Rich Text / Handwritten Board Notes Textarea -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="text-xs font-semibold text-slate-700 flex items-center gap-1.5">
+<i class="w-3.5 h-3.5 text-amber-600" data-lucide="edit-3"></i> Direct Rich Text / Handwritten Board Notes (Inline Notice &amp; Explanation)
+            </label>
+<span class="text-[10px] text-slate-500 font-medium">Displays immediately as an announcement block in Student App</span>
+</div>
+<textarea class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 placeholder:text-slate-400 focus:border-amber-500 focus:outline-none" id="noteDirectText" placeholder="Paste Hindi meaning, tricky exam grammar tips, line-by-line chapter breakdown, or tonight's board question alert..." rows="3"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row justify-between items-center gap-3 pt-2 border-t border-amber-200">
+<span class="text-[11px] text-slate-500">Materials published here sync instantly with authenticated students' "My Notes" locker.</span>
+<div class="flex gap-2 w-full sm:w-auto">
+<button class="bg-white hover:bg-slate-100 text-slate-700 text-xs font-bold px-4 py-2 rounded-lg border border-slate-300 transition" type="reset">Reset</button>
+<button class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-5 py-2 rounded-lg transition flex items-center justify-center gap-1.5 shadow" type="submit">
+<i class="w-4 h-4" data-lucide="check-circle"></i> Publish Material to Student App
+            </button>
+</div>
+</div>
+</form>
+</div>
+<!-- Materials List Table with Formats & Actions -->
+<div class="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+<table class="w-full text-xs text-left" id="materialsTable">
+<thead class="bg-slate-50 text-slate-600 uppercase text-[10px] border-b border-slate-200 font-bold">
+<tr>
+<th class="py-3 px-3">Handout / Note Title</th>
+<th class="py-3 px-3">Format Type</th>
+<th class="py-3 px-3">Target Class</th>
+<th class="py-3 px-3">Subject Category</th>
+<th class="py-3 px-3">Uploaded On</th>
+<th class="py-3 px-3">Downloads / Views</th>
+<th class="py-3 px-3 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 text-slate-700" id="materialsTableBody">
+<!-- Populated dynamically via JS -->
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section 7: Institute Profile & Public Contact CMS -->
+<div class="bg-white/92 backdrop-blur-md border border-slate-200/90 rounded-2xl p-6 shadow-md" id="cms-info">
+<div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-6">
+<div>
+<h2 class="text-lg font-bold text-slate-900 mb-1">General Institute Profile &amp; Contact Details</h2>
+<p class="text-xs text-slate-500">Controls global footers, top announcement ribbons, and helpline cards across all pages.</p>
+</div>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-xl transition flex items-center gap-1.5 shadow" onclick="saveProfileCMS()">
+<i class="w-3.5 h-3.5" data-lucide="check"></i> Save Profile Settings
+      </button>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Founder &amp; Chief Faculty</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-900 font-semibold focus:border-amber-500 focus:bg-white focus:outline-none" id="profFounder" type="text" value="Hirdesh Sir"/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Primary Helpline &amp; WhatsApp</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs text-amber-800 font-bold focus:border-amber-500 focus:bg-white focus:outline-none font-mono" id="profPhone" type="text" value="+91 9302100896"/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Official UPI Account</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs text-emerald-800 font-bold focus:border-amber-500 focus:bg-white focus:outline-none font-mono" id="profUPI" type="text" value="jbninstitute@sbi"/>
+</div>
+</div>
+<div class="mt-4">
+<label class="text-xs font-semibold text-slate-700 block mb-1">Campus Physical Address</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none font-medium" id="profAddress" type="text" value="Ater Road, Bamba Ka Kinara, Bhind, Madhya Pradesh - 477001"/>
+</div>
+</div>
+</main>
+<!-- Unified Interactive Modals (Light styled) -->
+<!-- 1. Lead Modal (Add/Edit) -->
+<div class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4" id="leadModal">
+<div class="bg-white border border-amber-300 rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl">
+<div class="flex justify-between items-center border-b border-slate-200 pb-3">
+<h3 class="text-sm font-bold text-amber-900 flex items-center gap-2" id="leadModalTitle">
+<i class="w-4 h-4 text-amber-600" data-lucide="inbox"></i> Add Walk-In Demo Inquiry
+      </h3>
+<button class="text-slate-400 hover:text-slate-700" onclick="closeLeadModal()"><i class="w-4 h-4" data-lucide="x"></i></button>
+</div>
+<form class="space-y-3" id="leadForm" onsubmit="saveLeadForm(event)">
+<input id="leadEditIndex" type="hidden" value="-1"/>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Student Full Name *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="leadName" placeholder="e.g. Vikas Sharma" required=""/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Parent Phone *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-amber-800 font-mono focus:border-amber-500 focus:bg-white focus:outline-none" id="leadPhone" placeholder="+91 98XXX XXXXX" required=""/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Target Class *</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="leadClass">
+<option value="Class 10th Intensive">Class 10th Intensive</option>
+<option value="Class 12th Super 50">Class 12th Super 50</option>
+<option value="Class 9th Foundation">Class 9th Foundation</option>
+<option value="Class 11th Literature">Class 11th Literature</option>
+</select>
+</div>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Board &amp; Medium</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="leadBoard">
+<option>MP Board (Hindi Med.)</option>
+<option>MP Board (Eng Med.)</option>
+<option>CBSE (English Med.)</option>
+</select>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Problem / Focus Area Notes</label>
+<textarea class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-700 focus:border-amber-500 focus:bg-white focus:outline-none resize-none" id="leadNotes" placeholder="e.g. Grammar foundation &amp; exam writing practice" rows="2"></textarea>
+</div>
+<div class="flex justify-end gap-2 pt-2 border-t border-slate-200">
+<button class="bg-white hover:bg-slate-100 text-xs text-slate-700 px-4 py-2 rounded-lg border border-slate-300 font-medium" onclick="closeLeadModal()" type="button">Cancel</button>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-5 py-2 rounded-lg transition shadow" type="submit">Save Inquiry</button>
+</div>
+</form>
+</div>
+</div>
+<!-- 2. Batch Modal (Add/Edit) -->
+<div class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4" id="batchModal">
+<div class="bg-white border border-amber-300 rounded-2xl max-w-md w-full p-6 space-y-4 shadow-2xl">
+<div class="flex justify-between items-center border-b border-slate-200 pb-3">
+<h3 class="text-sm font-bold text-amber-900 flex items-center gap-2" id="batchModalTitle">
+<i class="w-4 h-4 text-amber-600" data-lucide="layers"></i> Add Classroom Batch
+      </h3>
+<button class="text-slate-400 hover:text-slate-700" onclick="closeBatchModal()"><i class="w-4 h-4" data-lucide="x"></i></button>
+</div>
+<form class="space-y-3" id="batchForm" onsubmit="saveBatchForm(event)">
+<input id="batchEditIndex" type="hidden" value="-1"/>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Batch Name *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="batchNameInput" placeholder="e.g. Class 10th Intensive" required=""/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Status Badge Text</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="batchStatusBadge" placeholder="e.g. Admissions Open"/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Timing *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="batchTimingInput" placeholder="04:30 - 05:30 PM" required=""/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Monthly Tuition Fee *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-amber-800 font-bold focus:border-amber-500 focus:bg-white focus:outline-none" id="batchFeeInput" placeholder="₹950/mo" required=""/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Enrollment / Capacity *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="batchCapacityInput" placeholder="45 / 50 Enrolled" required=""/>
+</div>
+</div>
+<div class="flex justify-end gap-2 pt-2 border-t border-slate-200">
+<button class="bg-white hover:bg-slate-100 text-xs text-slate-700 px-4 py-2 rounded-lg border border-slate-300 font-medium" onclick="closeBatchModal()" type="button">Cancel</button>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-5 py-2 rounded-lg transition shadow" type="submit">Save Batch Architecture</button>
+</div>
+</form>
+</div>
+</div>
+<!-- 3. Student Edit Modal -->
+<div class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4" id="studentEditModal">
+<div class="bg-white border border-amber-300 rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl">
+<div class="flex justify-between items-center border-b border-slate-200 pb-3">
+<h3 class="text-sm font-bold text-amber-900 flex items-center gap-2">
+<i class="w-4 h-4 text-amber-600" data-lucide="user-cog"></i> Edit Student Profile &amp; Enrollment
+      </h3>
+<button class="text-slate-400 hover:text-slate-700" onclick="closeStudentEditModal()"><i class="w-4 h-4" data-lucide="x"></i></button>
+</div>
+<form class="space-y-3" id="studentEditForm" onsubmit="saveStudentEdit(event)">
+<input id="editStudentId" type="hidden" value=""/>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Full Name *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="editStudentName" required=""/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Roll ID (Protected)</label>
+<input class="w-full bg-slate-100 border border-slate-300 rounded-lg px-3 py-2 text-xs text-amber-800 font-mono font-bold" id="editStudentRoll" readonly=""/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Assigned Batch</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="editStudentBatch">
+<option value="Class 10th Intensive">Class 10th Intensive</option>
+<option value="Class 12th Super 50">Class 12th Super 50</option>
+<option value="Class 9th Foundation">Class 9th Foundation</option>
+<option value="Class 11th Core Literature">Class 11th Core Literature</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Parent Phone *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 font-mono focus:border-amber-500 focus:bg-white focus:outline-none" id="editStudentPhone" required=""/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Fee Status</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="editStudentFee">
+<option value="Paid (Apr 2025)">Paid (Apr 2025)</option>
+<option value="₹400 Due">₹400 Due</option>
+<option value="₹800 Due">₹800 Due</option>
+<option value="Scholarship Free">Scholarship Free</option>
+</select>
+</div>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Board &amp; Medium</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="editStudentBoard">
+<option>MP Board (Hindi Med.)</option>
+<option>MP Board (Eng Med.)</option>
+<option>CBSE (English Med.)</option>
+</select>
+</div>
+<div class="flex justify-end gap-2 pt-2 border-t border-slate-200">
+<button class="bg-white hover:bg-slate-100 text-xs text-slate-700 px-4 py-2 rounded-lg border border-slate-300 font-medium" onclick="closeStudentEditModal()" type="button">Cancel</button>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-5 py-2 rounded-lg transition shadow" type="submit">Update Student Record</button>
+</div>
+</form>
+</div>
+</div>
+<!-- 4. Lesson Plan Modal -->
+<div class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4" id="lessonModal">
+<div class="bg-white border border-amber-300 rounded-2xl max-w-md w-full p-6 space-y-4 shadow-2xl">
+<div class="flex justify-between items-center border-b border-slate-200 pb-3">
+<h3 class="text-sm font-bold text-amber-900 flex items-center gap-2" id="lessonModalTitle">
+<i class="w-4 h-4 text-amber-600" data-lucide="calendar"></i> Lesson Schedule Block
+      </h3>
+<button class="text-slate-400 hover:text-slate-700" onclick="closeLessonModal()"><i class="w-4 h-4" data-lucide="x"></i></button>
+</div>
+<form class="space-y-3" id="lessonForm" onsubmit="saveLessonForm(event)">
+<input id="lessonEditIndex" type="hidden" value="-1"/>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Days *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-amber-800 font-bold focus:border-amber-500 focus:bg-white focus:outline-none" id="lessonDays" placeholder="e.g. Monday &amp; Tuesday" required=""/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Tag / Category *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="lessonTag" placeholder="e.g. Grammar Core" required=""/>
+</div>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Topic &amp; Chapter Breakdown *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" id="lessonTopic" placeholder="e.g. Tenses &amp; Voice Transformation" required=""/>
+</div>
+<div>
+<label class="text-xs font-semibold text-slate-700 block mb-1">Mandatory Homework Note *</label>
+<textarea class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-700 focus:border-amber-500 focus:bg-white focus:outline-none resize-none" id="lessonHw" placeholder="Solve Exercises from sheet..." required="" rows="3"></textarea>
+</div>
+<div class="flex justify-end gap-2 pt-2 border-t border-slate-200">
+<button class="bg-white hover:bg-slate-100 text-xs text-slate-700 px-4 py-2 rounded-lg border border-slate-300 font-medium" onclick="closeLessonModal()" type="button">Cancel</button>
+<button class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-5 py-2 rounded-lg transition shadow" type="submit">Save Lesson Schedule</button>
+</div>
+</form>
+</div>
+</div>
+<!-- 5. Simple Modal for Note Preview -->
+<div class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4" id="previewModal">
+<div class="bg-white border border-amber-300 rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl">
+<div class="flex justify-between items-center border-b border-slate-200 pb-3">
+<div class="flex items-center gap-2">
+<span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300" id="prevBadge">PDF</span>
+<h3 class="text-sm font-bold text-slate-900" id="prevTitle">Preview</h3>
+</div>
+<button class="text-slate-400 hover:text-slate-700" onclick="closePreview()"><i class="w-4 h-4" data-lucide="x"></i></button>
+</div>
+<div class="text-xs text-slate-800 bg-slate-50 p-4 rounded-xl border border-slate-200 font-mono leading-relaxed max-h-60 overflow-y-auto whitespace-pre-wrap" id="prevContent">
+      Preview Content
+    </div>
+<div class="flex justify-between items-center pt-2 border-t border-slate-200">
+<span class="text-[11px] text-slate-500 font-mono">Sync ID: JBN-CONTENT-LOCKER-VERIFIED</span>
+<button class="bg-slate-800 hover:bg-slate-700 text-xs text-white px-4 py-1.5 rounded-lg shadow-xs" onclick="closePreview()">Close</button>
+</div>
+</div>
+</div>
+<footer class="border-t border-slate-200/80 py-6 text-center text-xs text-slate-600 mt-12 bg-white/70 backdrop-blur-sm">
+  © 2025 JBN Institute of English • Faculty Master CMS for Hirdesh Sir • jbnclasses.vercel.app
+</footer>
+<!-- State Management & Interactive Scripts -->
+<script>
+  // Initial Data Defaults
+  const DEFAULT_LEADS = [
+    {
+      name: "Shivam Baghel",
+      phone: "+91 98934 11209",
+      class: "Class 10th Intensive",
+      board: "MP Board (Hindi Med.)",
+      notes: "Grammar foundation & active-passive doubts"
+    }
+  ];
+
+  const DEFAULT_BATCHES = [
+    {
+      name: "Class 9th Foundation",
+      status: "Admissions Open",
+      statusClass: "bg-emerald-100 text-emerald-800 border border-emerald-200",
+      borderClass: "border-slate-200",
+      timing: "03:30 - 04:30 PM",
+      fee: "₹800/mo",
+      capacity: "42 / 45 Enrolled",
+      titleColor: "text-blue-700"
+    },
+    {
+      name: "Class 10th Intensive",
+      status: "Only 2 Seats Left",
+      statusClass: "bg-amber-100 text-amber-900 border border-amber-300 font-bold",
+      borderClass: "border-amber-300",
+      timing: "04:30 - 05:30 PM",
+      fee: "₹950/mo",
+      capacity: "48 / 50 Enrolled",
+      titleColor: "text-amber-800"
+    },
+    {
+      name: "Class 11th Core Literature",
+      status: "Admissions Open",
+      statusClass: "bg-emerald-100 text-emerald-800 border border-emerald-200",
+      borderClass: "border-slate-200",
+      timing: "05:30 - 06:30 PM",
+      fee: "₹950/mo",
+      capacity: "40 / 45 Enrolled",
+      titleColor: "text-indigo-700"
+    },
+    {
+      name: "Class 12th Super 50",
+      status: "Batch Full (52/50)",
+      statusClass: "bg-red-100 text-red-800 border border-red-200 font-bold",
+      borderClass: "border-red-300",
+      timing: "06:30 - 07:30 PM",
+      fee: "₹1,100/mo",
+      capacity: "52 / 50 Aspirants",
+      titleColor: "text-emerald-700"
+    }
+  ];
+
+  const DEFAULT_STUDENTS = [
+    {
+      roll: "JBN-2025-018",
+      name: "Aman Sharma",
+      batch: "Class 12th Super 50",
+      board: "MP Board (Hindi Med.)",
+      phone: "+91 94251 88392",
+      fee: "Paid (Apr 2025)",
+      attendance: "Present"
+    },
+    {
+      roll: "JBN-2025-042",
+      name: "Rohit Kushwaha",
+      batch: "Class 9th Foundation",
+      board: "MP Board (Hindi Med.)",
+      phone: "+91 91312 04519",
+      fee: "₹400 Due",
+      attendance: "Present"
+    },
+    {
+      roll: "JBN-2025-067",
+      name: "Priya Tomar",
+      batch: "Class 10th Intensive",
+      board: "CBSE (English Med.)",
+      phone: "+91 98263 11984",
+      fee: "Paid (Apr 2025)",
+      attendance: "Present"
+    },
+    {
+      roll: "JBN-2025-071",
+      name: "Shivam Baghel",
+      batch: "Class 10th Intensive",
+      board: "MP Board (Hindi Med.)",
+      phone: "+91 98934 11209",
+      fee: "Paid (Apr 2025)",
+      attendance: "Present"
+    },
+    {
+      roll: "JBN-2025-078",
+      name: "Anurag Singh Bhadouria",
+      batch: "Class 10th Intensive",
+      board: "MP Board (Hindi Med.)",
+      phone: "+91 99812 44321",
+      fee: "₹800 Due",
+      attendance: "Absent"
+    },
+    {
+      roll: "JBN-2025-095",
+      name: "Deependra Yadav",
+      batch: "Class 12th Super 50",
+      board: "MP Board (Hindi Med.)",
+      phone: "+91 98261 44521",
+      fee: "Paid (Apr 2025)",
+      attendance: "Present"
+    },
+    {
+      roll: "JBN-2025-112",
+      name: "Sneha Chauhan",
+      batch: "Class 11th Core Literature",
+      board: "CBSE (English Med.)",
+      phone: "+91 97552 33144",
+      fee: "Paid (Apr 2025)",
+      attendance: "Present"
+    }
+  ];
+
+  const DEFAULT_LESSONS = [
+    {
+      days: "Monday & Tuesday",
+      tag: "Grammar Core",
+      tagColor: "bg-slate-100 text-slate-700 border border-slate-200",
+      topic: "Tenses & Active-Passive Voice Transformation",
+      hw: "Solve Exercise 4 (Q1 to Q20) from Master Grammar Sheet. Hindi to English translation."
+    },
+    {
+      days: "Wednesday & Thursday",
+      tag: "Literature & Text",
+      tagColor: "bg-slate-100 text-slate-700 border border-slate-200",
+      topic: "The Last Lesson (Flamingo) Line-by-Line Meaning",
+      hw: "Memorize 5-mark character sketch of M. Hamel and 2 short questions."
+    },
+    {
+      days: "Friday Special",
+      tag: "Writing Skills",
+      tagColor: "bg-blue-100 text-blue-800 border border-blue-200 font-semibold",
+      topic: "Formal Letter & Notice Writing Format (100% Mark)",
+      hw: "Draft 2 Notice drafts in fair notebook: Lost & Found, Blood Donation Camp."
+    },
+    {
+      days: "Saturday Test & Sunday",
+      tag: "Weekly OMR Test",
+      tagColor: "bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold",
+      topic: "50 Marks Weekly Board-Pattern Offline Exam",
+      hw: "Sunday Doubt Clearing Session: 10:00 AM to 12:30 PM at Ater Road center."
+    }
+  ];
+
+  const DEFAULT_MATERIALS = [
+    {
+      title: "100 Golden Rules of Tenses & Voice (Handwritten PDF)",
+      format: "PDF",
+      badgeClass: "bg-red-100 text-red-800 border-red-300",
+      batch: "Class 10th & 12th",
+      category: "Grammar Formula",
+      date: "24-Apr-2025",
+      views: "128 Students",
+      desc: "Handwritten comprehensive rules PDF for active/passive and tenses."
+    },
+    {
+      title: "Classroom Whiteboard: M. Hamel Character Mindmap Scan",
+      format: "JPEG / SCAN",
+      badgeClass: "bg-blue-100 text-blue-800 border-blue-300",
+      batch: "Class 12th Super 50",
+      category: "NCERT Literature Hindi Decode",
+      date: "23-Apr-2025",
+      views: "96 Students",
+      desc: "High-res image scan of Hirdesh Sir board notes on Flamingo Chapter 1."
+    },
+    {
+      title: "MP Board Model Paper 2025 Solved Bank (.docx)",
+      format: "WORD DOC",
+      badgeClass: "bg-indigo-100 text-indigo-800 border-indigo-300",
+      batch: "Class 10th Intensive",
+      category: "Board Question Bank",
+      date: "21-Apr-2025",
+      views: "114 Students",
+      desc: "Editable Word bank with 50 previous board questions solved."
+    },
+    {
+      title: "Direct Board Alert: Common Errors in Report Writing",
+      format: "DIRECT TEXT",
+      badgeClass: "bg-emerald-100 text-emerald-800 border-emerald-300",
+      batch: "Class 12th Super 50",
+      category: "Quick Written Notes",
+      date: "Today, 26-Apr",
+      views: "62 Views",
+      desc: "Always write date format as: 26th April, 2025. Never use slash format in MP Board English examination!"
+    }
+  ];
+
+  // State
+  let leads = JSON.parse(localStorage.getItem('jbn_leads')) || DEFAULT_LEADS;
+  let batches = JSON.parse(localStorage.getItem('jbn_batches')) || DEFAULT_BATCHES;
+  let students = JSON.parse(localStorage.getItem('jbn_students')) || DEFAULT_STUDENTS;
+  let lessons = JSON.parse(localStorage.getItem('jbn_lessons')) || DEFAULT_LESSONS;
+  let materials = JSON.parse(localStorage.getItem('jbn_materials')) || DEFAULT_MATERIALS;
+  let activeAttendanceBatch = 'Class 10th Intensive';
+
+  // Notification Toast Helper
+  function showToast(message, type = 'success') {
+    const container = document.getElementById('toastContainer');
+    const toast = document.createElement('div');
+    const isSuccess = type === 'success';
+    toast.className = `transform transition-all duration-300 ease-out translate-y-2 opacity-0 pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-xl shadow-xl border text-xs font-bold ${
+      isSuccess 
+        ? 'bg-emerald-50 text-emerald-900 border-emerald-300' 
+        : 'bg-amber-50 text-amber-900 border-amber-300'
+    }`;
+    
+    toast.innerHTML = `
+      <i class="w-4 h-4 shrink-0 ${isSuccess ? 'text-emerald-600' : 'text-amber-600'}" data-lucide="${isSuccess ? 'check-circle-2' : 'alert-triangle'}"></i>
+      <span>${message}</span>
+    `;
+    container.appendChild(toast);
+    lucide.createIcons();
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-2', 'opacity-0');
+    }, 10);
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-2');
+      setTimeout(() => toast.remove(), 300);
+    }, 4000);
+  }
+
+  // Save all to localStorage
+  function persistAll() {
+    localStorage.setItem('jbn_leads', JSON.stringify(leads));
+    localStorage.setItem('jbn_batches', JSON.stringify(batches));
+    localStorage.setItem('jbn_students', JSON.stringify(students));
+    localStorage.setItem('jbn_lessons', JSON.stringify(lessons));
+    localStorage.setItem('jbn_materials', JSON.stringify(materials));
+  }
+
+  function saveAllChanges(showNotification = true) {
+    persistAll();
+    saveProfileCMS(false);
+    if (showNotification) {
+      showToast('Master CMS changes synchronized successfully with jbnclasses.vercel.app production database!');
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+      e.preventDefault();
+      saveAllChanges(true);
+    }
+  });
+
+  // 1. LEADS DESK
+  function renderLeadsTable() {
+    const tbody = document.getElementById('leadsTableBody');
+    tbody.innerHTML = '';
+    document.getElementById('navLeadsCount').innerText = leads.length;
+    document.getElementById('leadsHeaderCount').innerText = `${leads.length} Active`;
+
+    if (leads.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="6" class="py-6 text-center text-slate-500 text-xs">No pending student inquiries. Click "+ Add Inquiry Manually" to register walk-ins.</td></tr>`;
+      return;
+    }
+
+    leads.forEach((lead, index) => {
+      const cleanPhone = lead.phone.replace(/[^0-9]/g, '');
+      const tr = document.createElement('tr');
+      tr.className = 'hover:bg-amber-50/40 transition';
+      tr.innerHTML = `
+        <td class="py-3 px-3 font-bold text-slate-900">${lead.name} <span class="text-[10px] bg-emerald-100 text-emerald-800 border border-emerald-200 px-1.5 py-0.5 rounded font-mono ml-1">New</span></td>
+        <td class="py-3 px-3 text-amber-800 font-mono font-semibold">${lead.phone}</td>
+        <td class="py-3 px-3"><span class="bg-amber-100 text-amber-900 border border-amber-200 px-2 py-0.5 rounded font-bold">${lead.class}</span></td>
+        <td class="py-3 px-3 text-slate-600">${lead.board || 'MP Board'}</td>
+        <td class="py-3 px-3 text-slate-600 max-w-xs truncate">${lead.notes || 'Interested in English Coaching'}</td>
+        <td class="py-3 px-3 text-right space-x-1 whitespace-nowrap">
+          <a class="bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold px-2.5 py-1 rounded transition inline-flex items-center gap-1 shadow-xs" href="https://wa.me/${cleanPhone}?text=${encodeURIComponent('Namaste ' + lead.name + ', Hirdesh Sir has approved your 2-Day Free Demo Pass for ' + lead.class + ' at JBN Institute.')}" target="_blank">
+            <i class="w-3 h-3" data-lucide="message-circle"></i> WhatsApp
+          </a>
+          <button class="bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1 rounded text-[11px] font-medium border border-slate-300 shadow-xs" onclick="editLead(${index})">Edit</button>
+          <button class="bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 px-2 py-1 rounded text-[11px] font-medium" onclick="deleteLead(${index})">Delete</button>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+    lucide.createIcons();
+  }
+
+  function openLeadModal(isEdit = false, index = -1) {
+    document.getElementById('leadModal').classList.remove('hidden');
+    document.getElementById('leadEditIndex').value = index;
+    if (isEdit && index >= 0) {
+      const item = leads[index];
+      document.getElementById('leadModalTitle').innerText = 'Edit Demo Class Lead';
+      document.getElementById('leadName').value = item.name;
+      document.getElementById('leadPhone').value = item.phone;
+      document.getElementById('leadClass').value = item.class;
+      document.getElementById('leadBoard').value = item.board;
+      document.getElementById('leadNotes').value = item.notes;
+    } else {
+      document.getElementById('leadModalTitle').innerText = 'Add Walk-In Demo Inquiry';
+      document.getElementById('leadForm').reset();
+      document.getElementById('leadPhone').value = '+91 ';
+    }
+  }
+
+  function closeLeadModal() {
+    document.getElementById('leadModal').classList.add('hidden');
+  }
+
+  function saveLeadForm(e) {
+    e.preventDefault();
+    const idx = parseInt(document.getElementById('leadEditIndex').value, 10);
+    const newLead = {
+      name: document.getElementById('leadName').value.trim(),
+      phone: document.getElementById('leadPhone').value.trim(),
+      class: document.getElementById('leadClass').value,
+      board: document.getElementById('leadBoard').value,
+      notes: document.getElementById('leadNotes').value.trim()
+    };
+
+    if (idx >= 0) {
+      leads[idx] = newLead;
+      showToast(`Lead updated for "${newLead.name}"`);
+    } else {
+      leads.unshift(newLead);
+      showToast(`New Demo Class lead captured: "${newLead.name}"`);
+    }
+    persistAll();
+    renderLeadsTable();
+    closeLeadModal();
+  }
+
+  function editLead(index) {
+    openLeadModal(true, index);
+  }
+
+  function deleteLead(index) {
+    if (confirm(`Remove demo lead inquiry for "${leads[index].name}"?`)) {
+      const removed = leads.splice(index, 1);
+      persistAll();
+      renderLeadsTable();
+      showToast(`Lead "${removed[0].name}" deleted.`, 'info');
+    }
+  }
+
+  function exportLeadsCSV() {
+    if (leads.length === 0) {
+      alert('No leads available to export.');
+      return;
+    }
+    let csv = "Student Name,Parent Phone,Target Class,Board & Medium,Notes\n";
+    leads.forEach(l => {
+      csv += `"${l.name}","${l.phone}","${l.class}","${l.board}","${l.notes.replace(/"/g, '""')}"\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `jbn_demo_leads_${new Date().toISOString().slice(0,10)}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    showToast('Leads exported as jbn_demo_leads.csv');
+  }
+
+  // 2. BATCH ARCHITECTURE
+  function renderBatchesGrid() {
+    const grid = document.getElementById('batchesGrid');
+    grid.innerHTML = '';
+    document.getElementById('totalBatchesCount').innerText = batches.length;
+
+    batches.forEach((b, idx) => {
+      const card = document.createElement('div');
+      card.className = `bg-white border ${b.borderClass || 'border-slate-200'} p-4 rounded-xl space-y-3 relative group shadow-sm`;
+      card.innerHTML = `
+        <div class="flex justify-between items-center">
+          <span class="text-xs font-bold ${b.titleColor || 'text-amber-800'}">${b.name}</span>
+          <span class="text-[10px] ${b.statusClass || 'bg-emerald-100 text-emerald-800 border border-emerald-200'} px-2 py-0.5 rounded font-semibold">${b.status}</span>
+        </div>
+        <div>
+          <label class="text-[10px] text-slate-500 font-semibold block">Class Timing</label>
+          <input class="w-full bg-slate-50 border border-slate-300 rounded px-2.5 py-1 text-xs text-slate-800 font-medium focus:border-amber-500 focus:bg-white focus:outline-none" type="text" value="${b.timing}" onchange="updateBatchInline(${idx}, 'timing', this.value)"/>
+        </div>
+        <div>
+          <label class="text-[10px] text-slate-500 font-semibold block">Monthly Tuition Fee (₹)</label>
+          <input class="w-full bg-slate-50 border border-slate-300 rounded px-2.5 py-1 text-xs text-amber-800 font-bold focus:border-amber-500 focus:bg-white focus:outline-none" type="text" value="${b.fee}" onchange="updateBatchInline(${idx}, 'fee', this.value)"/>
+        </div>
+        <div>
+          <label class="text-[10px] text-slate-500 font-semibold block">Enrolled / Capacity</label>
+          <input class="w-full bg-slate-50 border border-slate-300 rounded px-2.5 py-1 text-xs text-slate-700 focus:border-amber-500 focus:bg-white focus:outline-none" type="text" value="${b.capacity}" onchange="updateBatchInline(${idx}, 'capacity', this.value)"/>
+        </div>
+        <div class="pt-2 border-t border-slate-100 flex justify-end gap-1.5">
+          <button class="bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1 rounded text-[11px] font-medium border border-slate-300 shadow-xs" onclick="editBatch(${idx})">Edit Batch</button>
+          <button class="bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 px-2.5 py-1 rounded text-[11px] font-medium" onclick="deleteBatch(${idx})">Delete Batch</button>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  function updateBatchInline(index, field, value) {
+    batches[index][field] = value;
+    persistAll();
+    showToast(`Batch ${batches[index].name} ${field} updated.`);
+  }
+
+  function openAddBatchModal() {
+    document.getElementById('batchModalTitle').innerText = 'Add New Batch';
+    document.getElementById('batchEditIndex').value = -1;
+    document.getElementById('batchForm').reset();
+    document.getElementById('batchStatusBadge').value = 'Admissions Open';
+    document.getElementById('batchModal').classList.remove('hidden');
+  }
+
+  function editBatch(index) {
+    document.getElementById('batchModalTitle').innerText = 'Edit Batch Architecture';
+    document.getElementById('batchEditIndex').value = index;
+    const b = batches[index];
+    document.getElementById('batchNameInput').value = b.name;
+    document.getElementById('batchStatusBadge').value = b.status;
+    document.getElementById('batchTimingInput').value = b.timing;
+    document.getElementById('batchFeeInput').value = b.fee;
+    document.getElementById('batchCapacityInput').value = b.capacity;
+    document.getElementById('batchModal').classList.remove('hidden');
+  }
+
+  function closeBatchModal() {
+    document.getElementById('batchModal').classList.add('hidden');
+  }
+
+  function saveBatchForm(e) {
+    e.preventDefault();
+    const idx = parseInt(document.getElementById('batchEditIndex').value, 10);
+    const name = document.getElementById('batchNameInput').value.trim();
+    const status = document.getElementById('batchStatusBadge').value.trim() || 'Active';
+    const timing = document.getElementById('batchTimingInput').value.trim();
+    const fee = document.getElementById('batchFeeInput').value.trim();
+    const capacity = document.getElementById('batchCapacityInput').value.trim();
+
+    const batchObj = {
+      name,
+      status,
+      statusClass: "bg-emerald-100 text-emerald-800 border border-emerald-200",
+      borderClass: "border-slate-200",
+      timing,
+      fee,
+      capacity,
+      titleColor: "text-amber-800"
+    };
+
+    if (idx >= 0) {
+      batches[idx] = { ...batches[idx], ...batchObj };
+      showToast(`Batch "${name}" settings updated!`);
+    } else {
+      batches.push(batchObj);
+      showToast(`New batch "${name}" created and synced!`);
+    }
+
+    persistAll();
+    renderBatchesGrid();
+    closeBatchModal();
+  }
+
+  function deleteBatch(index) {
+    const bName = batches[index].name;
+    if (confirm(`Are you sure you want to remove batch "${bName}"?`)) {
+      batches.splice(index, 1);
+      persistAll();
+      renderBatchesGrid();
+      showToast(`Batch "${bName}" removed.`, 'info');
+    }
+  }
+
+  // 3. STUDENTS MANAGEMENT & REGISTRATION
+  function toggleStudentRegisterForm() {
+    const formWrapper = document.getElementById('studentFormWrapper');
+    const isHidden = formWrapper.classList.contains('hidden');
+    if (isHidden) {
+      formWrapper.classList.remove('hidden');
+      document.getElementById('toggleRegisterBtnText').innerText = '- Hide Registration Form';
+      autoGenerateRollId();
+    } else {
+      formWrapper.classList.add('hidden');
+      document.getElementById('toggleRegisterBtnText').innerText = '+ Add New Student';
+    }
+  }
+
+  function autoGenerateRollId() {
+    const year = '2025';
+    const prefixes = ['10B', '12S', '09F', '11C'];
+    const p = prefixes[Math.floor(Math.random() * prefixes.length)];
+    const num = Math.floor(100 + Math.random() * 900);
+    document.getElementById('regRollId').value = `JBN-${year}-${p}-${num}`;
+  }
+
+  function syncPhoneToAuth(val) {
+    document.getElementById('regAuthPhone').value = val;
+  }
+
+  function sendCredentialsWhatsApp() {
+    const name = document.getElementById('regStudentName').value || 'Student';
+    const rollId = document.getElementById('regRollId').value || 'JBN-2025-10B-089';
+    const phone = document.getElementById('regStudentPhone').value || '+91 98263 11984';
+    const pass = document.getElementById('regPassword').value || 'JBN@Bhind2025';
+    const targetClass = document.getElementById('regTargetClass').value;
+    const cleanPhone = phone.replace(/[^0-9]/g, '');
+
+    if (!cleanPhone || cleanPhone.length < 10) {
+      alert('Please enter a valid student/parent phone number first.');
+      return;
+    }
+
+    const msg = encodeURIComponent(`॥ ॐ नमः शिवाय ॥\nNamaste ${name}!\nYour authenticated JBN Institute Student Portal Access is active.\n\nAssigned Batch: ${targetClass}\nRoll ID: ${rollId}\nPortal Password: ${pass}\nAuthorized OTP Phone: ${phone}\nLogin at: https://jbnclasses.vercel.app\n\n— Hirdesh Sir (Founder & Chief Faculty, JBN Institute)`);
+    window.open(`https://wa.me/${cleanPhone}?text=${msg}`, '_blank');
+    showToast(`WhatsApp credential dispatch link opened for ${name}`);
+  }
+
+  function handleStudentCreation(e) {
+    e.preventDefault();
+    const name = document.getElementById('regStudentName').value.trim();
+    const roll = document.getElementById('regRollId').value.trim();
+    const targetClass = document.getElementById('regTargetClass').value;
+    const board = document.getElementById('regBoard').value;
+    const phone = document.getElementById('regStudentPhone').value.trim();
+    const fee = document.getElementById('regFeeStatus').value;
+
+    const newStudent = {
+      roll,
+      name,
+      batch: targetClass,
+      board,
+      phone,
+      fee,
+      attendance: "Present"
+    };
+
+    students.unshift(newStudent);
+    persistAll();
+    renderStudentsTable();
+    renderAttendanceRoster();
+
+    showToast(`Student ${name} (${roll}) registered and activated!`);
+    document.getElementById('newStudentForm').reset();
+    autoGenerateRollId();
+  }
+
+  function renderStudentsTable() {
+    const tbody = document.getElementById('studentsTableBody');
+    const search = (document.getElementById('studentSearchInput').value || '').toLowerCase();
+    const filterClass = document.getElementById('studentFilterClass').value;
+
+    tbody.innerHTML = '';
+    const filtered = students.filter(s => {
+      const matchQuery = s.name.toLowerCase().includes(search) || 
+                         s.roll.toLowerCase().includes(search) || 
+                         s.phone.includes(search);
+      const matchClass = filterClass === 'ALL' || s.batch === filterClass;
+      return matchQuery && matchClass;
+    });
+
+    document.getElementById('navStudentsCount').innerText = students.length;
+    document.getElementById('studentsTotalBadge').innerText = `${students.length} Enrolled Across Batches`;
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="7" class="py-6 text-center text-slate-500 text-xs">No matching enrolled students found.</td></tr>`;
+      return;
+    }
+
+    filtered.forEach((s) => {
+      const origIndex = students.findIndex(item => item.roll === s.roll);
+      const cleanPhone = s.phone.replace(/[^0-9]/g, '');
+
+      let feeBadgeColor = 'bg-emerald-100 text-emerald-800 border border-emerald-200';
+      if (s.fee.includes('Due')) feeBadgeColor = 'bg-amber-100 text-amber-900 border border-amber-300';
+      if (s.fee.includes('Scholarship')) feeBadgeColor = 'bg-blue-100 text-blue-800 border border-blue-200';
+
+      const tr = document.createElement('tr');
+      tr.className = 'hover:bg-amber-50/40 transition';
+      tr.innerHTML = `
+        <td class="py-3 px-3 font-mono text-amber-800 font-bold">${s.roll}</td>
+        <td class="py-3 px-3 font-bold text-slate-900">${s.name}</td>
+        <td class="py-3 px-3"><span class="bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-medium border border-slate-200">${s.batch}</span></td>
+        <td class="py-3 px-3 text-slate-600">${s.board}</td>
+        <td class="py-3 px-3 text-slate-700 font-mono font-medium">${s.phone}</td>
+        <td class="py-3 px-3"><span class="${feeBadgeColor} px-2 py-0.5 rounded text-[11px] font-bold">${s.fee}</span></td>
+        <td class="py-3 px-3 text-right space-x-1 whitespace-nowrap">
+          <a class="bg-emerald-600 hover:bg-emerald-500 text-white px-2 py-1 rounded text-[11px] font-medium inline-flex items-center gap-1 shadow-xs" href="https://wa.me/${cleanPhone}?text=${encodeURIComponent('Namaste ' + s.name + ', JBN Student Portal Access: Roll ID: ' + s.roll)}" target="_blank">
+            <i class="w-3 h-3" data-lucide="send"></i> Pass
+          </a>
+          <button class="bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1 rounded text-[11px] font-medium border border-slate-300 shadow-xs" onclick="editStudentProfile(${origIndex})">Edit</button>
+          <button class="bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 px-2 py-1 rounded text-[11px] font-medium" onclick="deleteStudent(${origIndex})">Delete</button>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+    lucide.createIcons();
+  }
+
+  function editStudentProfile(index) {
+    const s = students[index];
+    document.getElementById('editStudentId').value = index;
+    document.getElementById('editStudentName').value = s.name;
+    document.getElementById('editStudentRoll').value = s.roll;
+    document.getElementById('editStudentBatch').value = s.batch;
+    document.getElementById('editStudentPhone').value = s.phone;
+    document.getElementById('editStudentFee').value = s.fee;
+    document.getElementById('editStudentBoard').value = s.board;
+    document.getElementById('studentEditModal').classList.remove('hidden');
+  }
+
+  function closeStudentEditModal() {
+    document.getElementById('studentEditModal').classList.add('hidden');
+  }
+
+  function saveStudentEdit(e) {
+    e.preventDefault();
+    const idx = parseInt(document.getElementById('editStudentId').value, 10);
+    if (idx >= 0 && students[idx]) {
+      students[idx].name = document.getElementById('editStudentName').value.trim();
+      students[idx].batch = document.getElementById('editStudentBatch').value;
+      students[idx].phone = document.getElementById('editStudentPhone').value.trim();
+      students[idx].fee = document.getElementById('editStudentFee').value;
+      students[idx].board = document.getElementById('editStudentBoard').value;
+
+      persistAll();
+      renderStudentsTable();
+      renderAttendanceRoster();
+      closeStudentEditModal();
+      showToast(`Student record for ${students[idx].name} updated!`);
+    }
+  }
+
+  function deleteStudent(index) {
+    const s = students[index];
+    if (confirm(`Remove student "${s.name}" (${s.roll}) permanently from registry?`)) {
+      students.splice(index, 1);
+      persistAll();
+      renderStudentsTable();
+      renderAttendanceRoster();
+      showToast(`Student ${s.name} removed from registry.`, 'info');
+    }
+  }
+
+  // 4. DAILY ATTENDANCE MARKING CONSOLE
+  function switchAttendanceBatch(batchName) {
+    activeAttendanceBatch = batchName;
+    document.getElementById('attendanceBatchIndicator').innerText = batchName;
+
+    // Update active button tab styles
+    const buttons = document.querySelectorAll('.att-batch-btn');
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-batch') === batchName) {
+        btn.className = 'att-batch-btn bg-amber-600 text-white px-3.5 py-1.5 rounded-lg font-bold transition shadow-xs';
+      } else {
+        btn.className = 'att-batch-btn bg-white hover:bg-slate-100 text-slate-700 px-3.5 py-1.5 rounded-lg border border-slate-300 font-medium transition';
+      }
+    });
+
+    renderAttendanceRoster();
+  }
+
+  function setStudentAttendance(roll, status) {
+    const student = students.find(s => s.roll === roll);
+    if (student) {
+      student.attendance = status;
+      persistAll();
+      renderAttendanceRoster();
+    }
+  }
+
+  function markAllAttendance(status) {
+    const targetStudents = students.filter(s => s.batch === activeAttendanceBatch);
+    targetStudents.forEach(s => s.attendance = status);
+    persistAll();
+    renderAttendanceRoster();
+    showToast(`All ${targetStudents.length} students in ${activeAttendanceBatch} marked ${status}!`);
+  }
+
+  function renderAttendanceRoster() {
+    const tbody = document.getElementById('attendanceTableBody');
+    tbody.innerHTML = '';
+
+    const batchStudents = students.filter(s => s.batch === activeAttendanceBatch);
+
+    // Get timing from batches list if available
+    const batchObj = batches.find(b => b.name === activeAttendanceBatch);
+    const timing = batchObj ? batchObj.timing : "04:30 - 05:30 PM";
+
+    if (batchStudents.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="6" class="py-6 text-center text-slate-500 text-xs">No students currently enrolled in ${activeAttendanceBatch}. Register students above to mark attendance.</td></tr>`;
+      return;
+    }
+
+    batchStudents.forEach(st => {
+      const isPresent = st.attendance === 'Present';
+      const isAbsent = st.attendance === 'Absent';
+      const isLate = st.attendance === 'Late';
+
+      let alertStatusHtml = '';
+      if (isPresent) {
+        alertStatusHtml = `<span class="text-[11px] text-emerald-700 font-semibold flex items-center justify-end gap-1"><i class="w-3 h-3" data-lucide="check"></i> Ready to Sync</span>`;
+      } else if (isAbsent) {
+        alertStatusHtml = `<span class="text-[11px] text-red-700 font-bold flex items-center justify-end gap-1"><i class="w-3 h-3" data-lucide="bell"></i> WhatsApp Alert Queued</span>`;
+      } else {
+        alertStatusHtml = `<span class="text-[11px] text-amber-700 font-semibold flex items-center justify-end gap-1"><i class="w-3 h-3" data-lucide="clock"></i> Late Arrival Logged</span>`;
+      }
+
+      const tr = document.createElement('tr');
+      tr.className = 'hover:bg-amber-50/40 transition';
+      tr.innerHTML = `
+        <td class="py-3 px-3 font-mono text-amber-800 font-bold">${st.roll}</td>
+        <td class="py-3 px-3 font-bold text-slate-900">${st.name}</td>
+        <td class="py-3 px-3 text-slate-500">${timing}</td>
+        <td class="py-3 px-3 font-mono text-slate-700">${st.phone}</td>
+        <td class="py-3 px-3 text-center">
+          <div class="inline-flex rounded-lg bg-slate-100 p-1 border border-slate-200">
+            <button onclick="setStudentAttendance('${st.roll}', 'Present')" class="px-3 py-1 rounded text-[11px] font-bold transition ${isPresent ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">Present</button>
+            <button onclick="setStudentAttendance('${st.roll}', 'Absent')" class="px-3 py-1 rounded text-[11px] font-bold transition ${isAbsent ? 'bg-red-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">Absent</button>
+            <button onclick="setStudentAttendance('${st.roll}', 'Late')" class="px-3 py-1 rounded text-[11px] font-bold transition ${isLate ? 'bg-amber-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}">Late</button>
+          </div>
+        </td>
+        <td class="py-3 px-3 text-right">${alertStatusHtml}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+    lucide.createIcons();
+  }
+
+  function submitDailyAttendance() {
+    const batchStudents = students.filter(s => s.batch === activeAttendanceBatch);
+    const presentCount = batchStudents.filter(s => s.attendance === 'Present').length;
+    const absentCount = batchStudents.filter(s => s.attendance === 'Absent').length;
+    const lateCount = batchStudents.filter(s => s.attendance === 'Late').length;
+
+    const now = new Date();
+    const formattedDate = `${now.getDate()}-${now.toLocaleString('default', { month: 'short' })}-${now.getFullYear()}`;
+    document.getElementById('attendanceCurrentDate').innerText = `Today, ${formattedDate}`;
+
+    showToast(`Attendance for [${activeAttendanceBatch}] locked and synced! ${presentCount} Present, ${absentCount} Absent alerts queued to parents WhatsApp.`, 'success');
+    persistAll();
+  }
+
+  // 5. WEEKLY TIMETABLE & LESSON PLANNER
+  function renderLessonsGrid() {
+    const grid = document.getElementById('lessonsGrid');
+    grid.innerHTML = '';
+
+    lessons.forEach((l, idx) => {
+      const card = document.createElement('div');
+      card.className = "bg-white border border-slate-200 p-4 rounded-xl space-y-3 shadow-sm";
+      card.innerHTML = `
+        <div class="flex justify-between items-center">
+          <span class="text-xs font-bold text-amber-800">${l.days}</span>
+          <span class="text-[10px] ${l.tagColor || 'bg-slate-100 text-slate-700 border border-slate-200'} px-2 py-0.5 rounded font-medium">${l.tag}</span>
+        </div>
+        <div>
+          <label class="text-[10px] text-slate-500 font-semibold block">Topic &amp; Chapter</label>
+          <input class="w-full bg-slate-50 border border-slate-300 rounded px-2.5 py-1 text-xs text-slate-800 focus:border-amber-500 focus:bg-white focus:outline-none" type="text" value="${l.topic}" onchange="updateLessonInline(${idx}, 'topic', this.value)"/>
+        </div>
+        <div>
+          <label class="text-[10px] text-slate-500 font-semibold block">Mandatory Homework Note</label>
+          <textarea class="w-full bg-slate-50 border border-slate-300 rounded px-2.5 py-1 text-xs text-slate-700 h-16 resize-none focus:border-amber-500 focus:bg-white focus:outline-none" onchange="updateLessonInline(${idx}, 'hw', this.value)">${l.hw}</textarea>
+        </div>
+        <div class="pt-2 border-t border-slate-100 flex justify-end gap-1.5">
+          <button class="bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1 rounded text-[11px] font-medium border border-slate-300 shadow-xs" onclick="editLesson(${idx})">Edit Lesson</button>
+          <button class="bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 px-2.5 py-1 rounded text-[11px] font-medium" onclick="deleteLesson(${idx})">Delete Topic</button>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  function updateLessonInline(idx, field, val) {
+    lessons[idx][field] = val;
+    persistAll();
+    showToast(`Lesson schedule for ${lessons[idx].days} saved.`);
+  }
+
+  function openAddLessonModal() {
+    document.getElementById('lessonModalTitle').innerText = 'Add Lesson Plan';
+    document.getElementById('lessonEditIndex').value = -1;
+    document.getElementById('lessonForm').reset();
+    document.getElementById('lessonModal').classList.remove('hidden');
+  }
+
+  function editLesson(index) {
+    document.getElementById('lessonModalTitle').innerText = 'Edit Lesson Plan';
+    document.getElementById('lessonEditIndex').value = index;
+    const l = lessons[index];
+    document.getElementById('lessonDays').value = l.days;
+    document.getElementById('lessonTag').value = l.tag;
+    document.getElementById('lessonTopic').value = l.topic;
+    document.getElementById('lessonHw').value = l.hw;
+    document.getElementById('lessonModal').classList.remove('hidden');
+  }
+
+  function closeLessonModal() {
+    document.getElementById('lessonModal').classList.add('hidden');
+  }
+
+  function saveLessonForm(e) {
+    e.preventDefault();
+    const idx = parseInt(document.getElementById('lessonEditIndex').value, 10);
+    const days = document.getElementById('lessonDays').value.trim();
+    const tag = document.getElementById('lessonTag').value.trim();
+    const topic = document.getElementById('lessonTopic').value.trim();
+    const hw = document.getElementById('lessonHw').value.trim();
+
+    const lessonObj = {
+      days,
+      tag,
+      tagColor: "bg-slate-100 text-slate-700 border border-slate-200",
+      topic,
+      hw
+    };
+
+    if (idx >= 0) {
+      lessons[idx] = lessonObj;
+      showToast(`Lesson plan for "${days}" updated!`);
+    } else {
+      lessons.push(lessonObj);
+      showToast(`New lesson plan added!`);
+    }
+
+    persistAll();
+    renderLessonsGrid();
+    closeLessonModal();
+  }
+
+  function deleteLesson(index) {
+    const l = lessons[index];
+    if (confirm(`Delete lesson schedule for ${l.days}?`)) {
+      lessons.splice(index, 1);
+      persistAll();
+      renderLessonsGrid();
+      showToast('Lesson block removed.', 'info');
+    }
+  }
+
+  // 6. STUDY MATERIALS & NOTES CMS
+  function renderMaterialsTable() {
+    const tbody = document.getElementById('materialsTableBody');
+    tbody.innerHTML = '';
+
+    materials.forEach((m, idx) => {
+      let icon = 'file-text';
+      if (m.format.includes('JPEG') || m.format.includes('SCAN') || m.format.includes('IMAGE')) icon = 'image';
+      else if (m.format.includes('WORD') || m.format.includes('DOC')) icon = 'file';
+      else if (m.format.includes('TEXT')) icon = 'align-left';
+
+      const tr = document.createElement('tr');
+      tr.className = 'hover:bg-amber-50/40 transition';
+      tr.innerHTML = `
+        <td class="py-3 px-3 font-bold text-slate-900 flex items-center gap-2">
+          <i class="w-4 h-4 text-amber-600 shrink-0" data-lucide="${icon}"></i>
+          <span>${m.title}</span>
+        </td>
+        <td class="py-3 px-3">
+          <span class="${m.badgeClass || 'bg-amber-100 text-amber-800 border border-amber-300'} px-2 py-0.5 rounded font-mono font-bold text-[10px]">${m.format}</span>
+        </td>
+        <td class="py-3 px-3"><span class="bg-amber-100 text-amber-900 border border-amber-200 px-2 py-0.5 rounded font-bold">${m.batch}</span></td>
+        <td class="py-3 px-3 text-slate-700">${m.category}</td>
+        <td class="py-3 px-3 text-slate-500">${m.date}</td>
+        <td class="py-3 px-3 text-emerald-700 font-mono font-bold">${m.views}</td>
+        <td class="py-3 px-3 text-right space-x-1 whitespace-nowrap">
+          <button class="bg-blue-50 hover:bg-blue-100 text-blue-700 px-2.5 py-1 rounded text-[11px] border border-blue-200 font-medium" onclick="previewNoteModal(${idx})">Preview</button>
+          <button class="bg-white hover:bg-slate-100 text-slate-700 px-2.5 py-1 rounded text-[11px] font-medium border border-slate-300 shadow-xs" onclick="editMaterialPrompt(${idx})">Edit</button>
+          <button class="bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 px-2 py-1 rounded text-[11px] font-medium" onclick="deleteMaterial(${idx})">Delete</button>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+    lucide.createIcons();
+  }
+
+  function handleNotesPublish(e) {
+    e.preventDefault();
+    const title = document.getElementById('noteTitle').value.trim();
+    const batch = document.getElementById('noteBatch').value;
+    const category = document.getElementById('noteCategory').value;
+    const fileInput = document.getElementById('noteFile');
+    const noteLink = document.getElementById('noteLink').value.trim();
+    const directText = document.getElementById('noteDirectText').value.trim();
+
+    let format = 'PDF';
+    let badgeClass = 'bg-red-100 text-red-800 border-red-300';
+    let contentDescription = directText || `Direct verified live material for ${batch}.`;
+
+    if (fileInput.files.length > 0) {
+      const ext = fileInput.files[0].name.split('.').pop().toLowerCase();
+      if (['jpg', 'jpeg', 'png'].includes(ext)) {
+        format = 'JPEG / SCAN';
+        badgeClass = 'bg-blue-100 text-blue-800 border-blue-300';
+      } else if (['doc', 'docx'].includes(ext)) {
+        format = 'WORD DOC';
+        badgeClass = 'bg-indigo-100 text-indigo-800 border-indigo-300';
+      } else if (ext === 'pdf') {
+        format = 'PDF';
+        badgeClass = 'bg-red-100 text-red-800 border-red-300';
+      }
+      contentDescription = `Attached file: ${fileInput.files[0].name}\nSize: ${(fileInput.files[0].size/1024).toFixed(1)} KB\n\nNotes Content:\n${directText || 'Full download available on student app portal.'}`;
+    } else if (directText) {
+      format = 'DIRECT TEXT';
+      badgeClass = 'bg-emerald-100 text-emerald-800 border-emerald-300';
+      contentDescription = directText;
+    } else if (noteLink) {
+      format = 'CLOUD LINK';
+      badgeClass = 'bg-amber-100 text-amber-800 border-amber-300';
+      contentDescription = `Google Drive / Cloud URL: ${noteLink}`;
+    }
+
+    const now = new Date();
+    const dateStr = `${now.getDate()}-${now.toLocaleString('default', { month: 'short' })}`;
+
+    const newMaterial = {
+      title,
+      format,
+      badgeClass,
+      batch,
+      category,
+      date: `Today, ${dateStr}`,
+      views: 'Published (0 Views)',
+      desc: contentDescription
+    };
+
+    materials.unshift(newMaterial);
+    persistAll();
+    renderMaterialsTable();
+
+    document.getElementById('notesPublishForm').reset();
+    showToast(`Handout "${title}" successfully published in [${format}]!`);
+  }
+
+  function previewNoteModal(index) {
+    const item = materials[index];
+    document.getElementById('prevTitle').innerText = item.title;
+    document.getElementById('prevBadge').innerText = item.format;
+    document.getElementById('prevContent').innerText = item.desc || "Verified coaching handout ready for class access.";
+    document.getElementById('previewModal').classList.remove('hidden');
+  }
+
+  function closePreview() {
+    document.getElementById('previewModal').classList.add('hidden');
+  }
+
+  function editMaterialPrompt(index) {
+    const item = materials[index];
+    const newTitle = prompt("Edit material title:", item.title);
+    if (newTitle && newTitle.trim()) {
+      item.title = newTitle.trim();
+      persistAll();
+      renderMaterialsTable();
+      showToast('Material title updated.');
+    }
+  }
+
+  function deleteMaterial(index) {
+    const item = materials[index];
+    if (confirm(`Delete handout "${item.title}" permanently?`)) {
+      materials.splice(index, 1);
+      persistAll();
+      renderMaterialsTable();
+      showToast(`Handout deleted.`, 'info');
+    }
+  }
+
+  // 7. INSTITUTE PROFILE CMS
+  function saveProfileCMS(showNotice = true) {
+    const profile = {
+      founder: document.getElementById('profFounder').value.trim(),
+      phone: document.getElementById('profPhone').value.trim(),
+      upi: document.getElementById('profUPI').value.trim(),
+      address: document.getElementById('profAddress').value.trim()
+    };
+    localStorage.setItem('jbn_profile_cms', JSON.stringify(profile));
+    if (showNotice) {
+      showToast('Institute profile and helpline settings saved.');
+    }
+  }
+
+  function loadProfileCMS() {
+    const saved = localStorage.getItem('jbn_profile_cms');
+    if (saved) {
+      try {
+        const p = JSON.parse(saved);
+        if (p.founder) document.getElementById('profFounder').value = p.founder;
+        if (p.phone) document.getElementById('profPhone').value = p.phone;
+        if (p.upi) document.getElementById('profUPI').value = p.upi;
+        if (p.address) document.getElementById('profAddress').value = p.address;
+      } catch (err) {}
+    }
+  }
+
+  function previewPublicLiveSite() {
+    showToast('Redirecting to live production site: https://jbnclasses.vercel.app');
+    setTimeout(() => {
+      window.open('https://jbnclasses.vercel.app', '_blank');
+    }, 400);
+  }
+
+  // Initialize Everything on Load
+  window.addEventListener('DOMContentLoaded', () => {
+    renderLeadsTable();
+    renderBatchesGrid();
+    renderStudentsTable();
+    renderAttendanceRoster();
+    renderLessonsGrid();
+    renderMaterialsTable();
+    loadProfileCMS();
+    lucide.createIcons();
+  });
+</script>
+</body></html>
